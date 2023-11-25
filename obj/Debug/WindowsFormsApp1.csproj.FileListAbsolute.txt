@@ -1,0 +1,10 @@
+C:\Users\Artem\Desktop\Університет\СПЗ\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\Artem\Desktop\Університет\СПЗ\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Artem\Desktop\Університет\СПЗ\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UsersMenu.resources
+C:\Users\Artem\Desktop\Університет\СПЗ\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Artem\Desktop\Університет\СПЗ\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Artem\Desktop\Університет\СПЗ\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Artem\Desktop\Університет\СПЗ\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Artem\Desktop\Університет\СПЗ\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Artem\Desktop\Університет\СПЗ\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Artem\Desktop\Університет\СПЗ\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
