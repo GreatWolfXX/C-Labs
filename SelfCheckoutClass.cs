@@ -83,50 +83,51 @@ namespace WindowsFormsApp1
             }
             return summ;
         }
-        public void ProcessReceipt(List<Product> products, PaymentType paymentType, decimal insertedCash)
+        public Payment ProcessReceipt(List<Product> products, PaymentType paymentType, bool loyaltyСard = false, bool delivery = false)
         {
+            Payment payment = null;
             var summ = TotalReceiptSumm(products);
 
             switch (paymentType)
             {
-                case PaymentType.CardRetail:
-                    /*CardBalance += summ;
-                    Transaction.CommitTransaction(this, new(TransactionType.BuyWithCard, Users.System, summ));*/
-                    break;
                 case PaymentType.CashRetail:
-                    /*CashBalance += summ;
-                    Transaction.CommitTransaction(this, new(TransactionType.BuyWithCash, Users.System, summ));
-
-                    if (insertedCash > summ)
-                    {
-                        CashBalance -= insertedCash - summ;
-                        Transaction.CommitTransaction(this, new(TransactionType.GiveChange, Users.System, insertedCash - summ));
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Insufficient cash.");
-                    }         */          
+                    payment = new CashPayment(products, summ, loyaltyСard, delivery);
+                    payment.CalculateFinalPrice();
+                    break;
+                case PaymentType.CardRetail:
+                    payment = new CardPayment(products, summ, loyaltyСard, delivery);
+                    payment.CalculateFinalPrice();
                     break;
                 case PaymentType.CashDeliveryRetail:
-
-                    break;
-                case PaymentType.CardWholesale:
-
+                    payment = new CourierCashPayment(products, summ, delivery);
+                    payment.CalculateFinalPrice();
                     break;
                 case PaymentType.CashWholesale:
-
+                    payment = new WholesaleCashPayment(products, summ, loyaltyСard, delivery);
+                    payment.CalculateFinalPrice();
+                    break;
+                case PaymentType.CardWholesale:
+                    payment = new WholesaleCardPayment(products, summ, loyaltyСard, delivery);
+                    payment.CalculateFinalPrice();
                     break;
                 case PaymentType.CashDeliveryWholesale:
-
+                    payment = new WholesaleCourierCashPayment(products, summ, delivery);
+                    payment.CalculateFinalPrice();
                     break;
                 default:
                     break;
             }
+            return payment;
         }
         public void TopUpCash(decimal amount)
         {
             CashBalance += amount;
             Transaction.CommitTransaction(this, new Transaction(TransactionType.CashTopUp, Users.Cashier, amount));
+        }
+
+        public void CreateTransaction(Payment payment)
+        {
+            /*Transaction.CommitTransaction(this, new(TransactionType.BuyWithCard, Users.System, summ));*/
         }
         public void PrintTransactions() 
         {

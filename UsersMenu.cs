@@ -17,6 +17,7 @@ namespace WindowsFormsApp1
 
         private List<SelfCheckoutClass> listSelfCheckouts;
         private int tempListSelfCheckoutPosition = 0;
+        private int userMoney = 10000;
 
         public UsersMenu()
         {
@@ -25,6 +26,8 @@ namespace WindowsFormsApp1
 
         private void UserMenu_Load(object sender, EventArgs e)
         {
+            lbUserMoney.Text = userMoney.ToString();
+
             listSelfCheckouts = new List<SelfCheckoutClass>();
 
             List<Product> products = new List<Product>()
@@ -42,7 +45,7 @@ namespace WindowsFormsApp1
                 new Product ("Chocolate","0011",1.01m)
             };
 
-            var Checkout1 = new SelfCheckoutClass("Checkout1", "XEA-123", "address");
+            var Checkout1 = new SelfCheckoutClass("Checkout1", "XEA-123", "address", true, true, true);
             Checkout1.AddListProducts(products);
             listSelfCheckouts.Add(Checkout1);
 
@@ -59,9 +62,21 @@ namespace WindowsFormsApp1
             usersPanel.Visible = false;
         }
 
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+            usersPanel.Visible = false;
+            userPanel.Visible = true;
+        }
+
         private void btnBackAdminPanel_Click(object sender, EventArgs e)
         {
             adminPanel.Visible = false;
+            usersPanel.Visible = true;
+        }
+
+        private void btnBackUser_Click(object sender, EventArgs e)
+        {
+            userPanel.Visible = false;
             usersPanel.Visible = true;
         }
 
@@ -247,6 +262,5 @@ namespace WindowsFormsApp1
             item.SubItems.Add(amount);
             lvTransactions.Items.Add(item);
         }
-
     }
 }

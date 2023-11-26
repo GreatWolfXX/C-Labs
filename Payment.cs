@@ -6,55 +6,177 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
-    internal class Payment
+    public interface Payment
     {
-        public Payment() { }
+        List<Product> Products { get; set; }
+        decimal TotalPrice { get; set; }
+        bool HomeDelivery { get; set; }
 
-       /* public virtual List<Product> ListPriducts { get; set; }
-        public virtual int PayablePrice() {
-            
+        void CalculateFinalPrice();
+    }
+
+    public struct CashPayment : Payment
+    {
+        public List<Product> Products { get; set; }
+        public decimal TotalPrice { get; set; }
+        public decimal AmountPaid { get; set; }
+        public decimal Change { get; set; }
+        public bool HasLoyaltyCard { get; set; }
+        public bool HomeDelivery { get; set; }
+
+        public CashPayment(List<Product> products, decimal totalPrice, bool hasLoyaltyCard = false, bool homeDelivery = false) {
+            Products = products;
+            TotalPrice = totalPrice;
+            AmountPaid = 0;
+            Change = 0;
+            HasLoyaltyCard = hasLoyaltyCard;
+            HomeDelivery = homeDelivery;
         }
-        public virtual decimal Amount { get; set; }
-        public virtual decimal RemainingFunds { get; set; }
-        public virtual bool LoyaltyCardAvailable { get; set; }
-        public virtual bool CourierDelivery { get; set; }*/
+
+        public void CalculateFinalPrice()
+        {
+            decimal discount = HasLoyaltyCard ? TotalPrice * 0.05m : 0;
+            decimal deliveryCharge = HomeDelivery ? 250 : 0;
+
+            decimal finalPrice = TotalPrice - discount + deliveryCharge;
+
+            TotalPrice = finalPrice;
+        }
     }
 
-    internal class PaymentCashRetail
+    public struct CardPayment : Payment
     {
-     
-        public PaymentCashRetail() { }
+        public  List<Product> Products { get; set; }
+        public decimal TotalPrice { get; set; }
+        public bool HasLoyaltyCard { get; set; }
+        public bool HomeDelivery { get; set; }
 
+        public CardPayment(List<Product> products, decimal totalPrice, bool hasLoyaltyCard, bool homeDelivery)
+        {
+            Products = products;
+            TotalPrice = totalPrice;
+            HasLoyaltyCard = hasLoyaltyCard;
+            HomeDelivery = homeDelivery;
+        }
+
+        public void CalculateFinalPrice()
+        {
+            decimal discount = HasLoyaltyCard ? TotalPrice * 0.05m : 0;
+            decimal deliveryCharge = HomeDelivery ? 250 : 0;
+
+            decimal finalPrice = TotalPrice - discount + deliveryCharge;
+
+            TotalPrice = finalPrice;
+        }
     }
-    internal class PaymentCardRetail
+
+    public struct CourierCashPayment : Payment
     {
+        public List<Product> Products { get; set; }
+        public decimal TotalPrice { get; set; }
+        public decimal AmountPaid { get; set; }
+        public decimal Change { get; set; }
+        public bool HomeDelivery { get; set; }
 
-        public PaymentCardRetail() { }
+        public CourierCashPayment(List<Product> products, decimal totalPrice, bool homeDelivery)
+        {
+            Products = products;
+            TotalPrice = totalPrice;
+            AmountPaid = 0;
+            Change = 0;
+            HomeDelivery = homeDelivery;
+        }
+        public void CalculateFinalPrice()
+        {
+            decimal discount = 0;
+            decimal deliveryCharge = HomeDelivery ? 250 : 0;
 
+            decimal finalPrice = TotalPrice - discount + deliveryCharge;
+
+            TotalPrice = finalPrice;
+        }
     }
-    internal class PaymentCashDeliveryRetail
+
+    public struct WholesaleCashPayment : Payment
     {
+        public List<Product> Products { get; set; }
+        public decimal TotalPrice { get; set; }
+        public decimal AmountPaid { get; set; }
+        public decimal Change { get; set; }
+        public bool HasLoyaltyCard { get; set; }
+        public bool HomeDelivery { get; set; }
 
-        public PaymentCashDeliveryRetail() { }
+        public WholesaleCashPayment(List<Product> products, decimal totalPrice, bool hasLoyaltyCard, bool homeDelivery)
+        {
+            Products = products;
+            TotalPrice = totalPrice;
+            AmountPaid = 0;
+            Change = 0;
+            HasLoyaltyCard = hasLoyaltyCard;
+            HomeDelivery = homeDelivery;
+        }
+        public void CalculateFinalPrice()
+        {
+            decimal discount = HasLoyaltyCard ? TotalPrice * 0.08m : 0;
+            decimal deliveryCharge = HomeDelivery ? 50 : 0;
 
+            decimal finalPrice = TotalPrice - discount + deliveryCharge;
+
+            TotalPrice = finalPrice;
+        }
+    }
+    
+    public struct WholesaleCardPayment : Payment
+    {
+        public List<Product> Products { get; set; }
+        public decimal TotalPrice { get; set; }
+        public bool HasLoyaltyCard { get; set; }
+        public bool HomeDelivery { get; set; }
+
+        public WholesaleCardPayment(List<Product> products, decimal totalPrice, bool hasLoyaltyCard, bool homeDelivery)
+        {
+            Products = products;
+            TotalPrice = totalPrice;
+            HasLoyaltyCard = hasLoyaltyCard;
+            HomeDelivery = homeDelivery;
+        }
+
+        public void CalculateFinalPrice()
+        {
+            decimal discount = HasLoyaltyCard ? TotalPrice * 0.08m : 0;
+            decimal deliveryCharge = HomeDelivery ? 50 : 0;
+
+            decimal finalPrice = TotalPrice - discount + deliveryCharge;
+
+            TotalPrice = finalPrice;
+        }
     }
 
-    internal class PaymentCashWholesale
+    public struct WholesaleCourierCashPayment : Payment
     {
+        public List<Product> Products { get; set; }
+        public decimal TotalPrice { get; set; }
+        public decimal AmountPaid { get; set; }
+        public decimal Change { get; set; }
+        public bool HomeDelivery { get; set; }
 
-        public PaymentCashWholesale() { }
+        public WholesaleCourierCashPayment(List<Product> products, decimal totalPrice, bool homeDelivery)
+        {
+            Products = products;
+            TotalPrice = totalPrice;
+            AmountPaid = 9;
+            Change = 9;
+            HomeDelivery = homeDelivery;
+        }
 
-    }
-    internal class PaymentCardWholesale
-    {
+        public void CalculateFinalPrice()
+        {
+            decimal discount = 0;
+            decimal deliveryCharge = 0;
 
-        public PaymentCardWholesale() { }
+            decimal finalPrice = TotalPrice - discount + deliveryCharge;
 
-    }
-    internal class PaymentCashDeliveryWholesale
-    {
-
-        public PaymentCashDeliveryWholesale() { }
-
+            TotalPrice = finalPrice;
+        }
     }
 }

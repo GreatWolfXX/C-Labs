@@ -6,7 +6,8 @@ using System.Linq;
 
 namespace WindowsFormsApp1
 {
-    internal class Product
+
+    public class Product
     {
         public Product(string name, string code, decimal price)
         {
