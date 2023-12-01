@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace WindowsFormsApp1
+namespace Lab2
 {
     public partial class UsersMenu : Form
     {

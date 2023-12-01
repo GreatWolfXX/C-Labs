@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 
-namespace WindowsFormsApp1
+namespace Lab2
 {
     internal class SelfCheckoutClass
     {

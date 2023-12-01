@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace WindowsFormsApp1
+namespace Lab2
 {
 
     public class Product

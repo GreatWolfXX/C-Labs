@@ -1,7 +1,7 @@
 ﻿using System.Drawing;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace Lab2
 {
     partial class UsersMenu
     {
