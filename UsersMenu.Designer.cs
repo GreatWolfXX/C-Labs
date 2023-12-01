@@ -79,16 +79,26 @@ namespace WindowsFormsApp1
             this.codeColumnProduct = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.priceColumnProduct = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.userPanel = new System.Windows.Forms.Panel();
+            this.lbErrorProductsUser = new System.Windows.Forms.Label();
+            this.lvUserProducts = new System.Windows.Forms.ListView();
+            this.nameProductUserColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.codeProductUserColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.priceProductUserColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lvListSelfCheckoutUser = new System.Windows.Forms.ListView();
+            this.nameSelfCheckoutColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.codeSelfCheckoutColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.addressSelfCheckoutColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lbListSelfCheckoutText = new System.Windows.Forms.Label();
+            this.btnPay = new System.Windows.Forms.Button();
+            this.tbAmountUser = new System.Windows.Forms.TextBox();
+            this.lbAmountUserText = new System.Windows.Forms.Label();
             this.lbCartAmount = new System.Windows.Forms.Label();
             this.lbCartAmountText = new System.Windows.Forms.Label();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.cbLoyaltyCard = new System.Windows.Forms.CheckBox();
+            this.cbDeliveryCart = new System.Windows.Forms.CheckBox();
             this.lbPayType = new System.Windows.Forms.Label();
             this.lbPayText = new System.Windows.Forms.Label();
             this.cbPayType = new System.Windows.Forms.ComboBox();
-            this.lbCountCartRemove = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnCartRemove = new System.Windows.Forms.Button();
             this.lbCartText = new System.Windows.Forms.Label();
             this.lvCart = new System.Windows.Forms.ListView();
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -99,13 +109,18 @@ namespace WindowsFormsApp1
             this.tbCountProducts = new System.Windows.Forms.TextBox();
             this.btnAddProductToCart = new System.Windows.Forms.Button();
             this.lbProductsListUser = new System.Windows.Forms.Label();
-            this.lvProductsListUser = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lbUserMoney = new System.Windows.Forms.Label();
             this.lbUserMoneyText = new System.Windows.Forms.Label();
             this.btnBackUser = new System.Windows.Forms.Button();
+            this.lbErrorPay = new System.Windows.Forms.Label();
+            this.btnSortByWithdrawCash = new System.Windows.Forms.Button();
+            this.btnSortByBuyWithCard = new System.Windows.Forms.Button();
+            this.btnSortByBuyWithCash = new System.Windows.Forms.Button();
+            this.btnSortByAddProduct = new System.Windows.Forms.Button();
+            this.btnSortByGiveChange = new System.Windows.Forms.Button();
+            this.btnSortByCashTopUp = new System.Windows.Forms.Button();
+            this.lbTypeSortTransactoin = new System.Windows.Forms.Label();
+            this.btnSortAll = new System.Windows.Forms.Button();
             this.adminPanel.SuspendLayout();
             this.usersPanel.SuspendLayout();
             this.editProductPanel.SuspendLayout();
@@ -114,6 +129,14 @@ namespace WindowsFormsApp1
             // 
             // adminPanel
             // 
+            this.adminPanel.Controls.Add(this.btnSortAll);
+            this.adminPanel.Controls.Add(this.lbTypeSortTransactoin);
+            this.adminPanel.Controls.Add(this.btnSortByAddProduct);
+            this.adminPanel.Controls.Add(this.btnSortByGiveChange);
+            this.adminPanel.Controls.Add(this.btnSortByCashTopUp);
+            this.adminPanel.Controls.Add(this.btnSortByBuyWithCash);
+            this.adminPanel.Controls.Add(this.btnSortByBuyWithCard);
+            this.adminPanel.Controls.Add(this.btnSortByWithdrawCash);
             this.adminPanel.Controls.Add(this.lvTransactions);
             this.adminPanel.Controls.Add(this.lbTextTransactions);
             this.adminPanel.Controls.Add(this.lbTextSlefCheckout);
@@ -420,28 +443,112 @@ namespace WindowsFormsApp1
             // 
             // userPanel
             // 
+            this.userPanel.Controls.Add(this.lbErrorPay);
+            this.userPanel.Controls.Add(this.lbErrorProductsUser);
+            this.userPanel.Controls.Add(this.lvUserProducts);
+            this.userPanel.Controls.Add(this.lvListSelfCheckoutUser);
+            this.userPanel.Controls.Add(this.lbListSelfCheckoutText);
+            this.userPanel.Controls.Add(this.btnPay);
+            this.userPanel.Controls.Add(this.tbAmountUser);
+            this.userPanel.Controls.Add(this.lbAmountUserText);
             this.userPanel.Controls.Add(this.lbCartAmount);
             this.userPanel.Controls.Add(this.lbCartAmountText);
-            this.userPanel.Controls.Add(this.checkBox2);
-            this.userPanel.Controls.Add(this.checkBox1);
+            this.userPanel.Controls.Add(this.cbLoyaltyCard);
+            this.userPanel.Controls.Add(this.cbDeliveryCart);
             this.userPanel.Controls.Add(this.lbPayType);
             this.userPanel.Controls.Add(this.lbPayText);
             this.userPanel.Controls.Add(this.cbPayType);
-            this.userPanel.Controls.Add(this.lbCountCartRemove);
-            this.userPanel.Controls.Add(this.textBox1);
-            this.userPanel.Controls.Add(this.btnCartRemove);
             this.userPanel.Controls.Add(this.lbCartText);
             this.userPanel.Controls.Add(this.lvCart);
             this.userPanel.Controls.Add(this.lbCountProductsText);
             this.userPanel.Controls.Add(this.tbCountProducts);
             this.userPanel.Controls.Add(this.btnAddProductToCart);
             this.userPanel.Controls.Add(this.lbProductsListUser);
-            this.userPanel.Controls.Add(this.lvProductsListUser);
             this.userPanel.Controls.Add(this.lbUserMoney);
             this.userPanel.Controls.Add(this.lbUserMoneyText);
             this.userPanel.Controls.Add(this.btnBackUser);
             resources.ApplyResources(this.userPanel, "userPanel");
             this.userPanel.Name = "userPanel";
+            // 
+            // lbErrorProductsUser
+            // 
+            resources.ApplyResources(this.lbErrorProductsUser, "lbErrorProductsUser");
+            this.lbErrorProductsUser.ForeColor = System.Drawing.Color.Tomato;
+            this.lbErrorProductsUser.Name = "lbErrorProductsUser";
+            // 
+            // lvUserProducts
+            // 
+            this.lvUserProducts.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.nameProductUserColumn,
+            this.codeProductUserColumn,
+            this.priceProductUserColumn});
+            this.lvUserProducts.HideSelection = false;
+            resources.ApplyResources(this.lvUserProducts, "lvUserProducts");
+            this.lvUserProducts.MultiSelect = false;
+            this.lvUserProducts.Name = "lvUserProducts";
+            this.lvUserProducts.UseCompatibleStateImageBehavior = false;
+            this.lvUserProducts.View = System.Windows.Forms.View.Details;
+            this.lvUserProducts.SelectedIndexChanged += new System.EventHandler(this.lvUserProducts_SelectedIndexChanged);
+            // 
+            // nameProductUserColumn
+            // 
+            resources.ApplyResources(this.nameProductUserColumn, "nameProductUserColumn");
+            // 
+            // codeProductUserColumn
+            // 
+            resources.ApplyResources(this.codeProductUserColumn, "codeProductUserColumn");
+            // 
+            // priceProductUserColumn
+            // 
+            resources.ApplyResources(this.priceProductUserColumn, "priceProductUserColumn");
+            // 
+            // lvListSelfCheckoutUser
+            // 
+            this.lvListSelfCheckoutUser.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.nameSelfCheckoutColumn,
+            this.codeSelfCheckoutColumn,
+            this.addressSelfCheckoutColumn});
+            this.lvListSelfCheckoutUser.HideSelection = false;
+            resources.ApplyResources(this.lvListSelfCheckoutUser, "lvListSelfCheckoutUser");
+            this.lvListSelfCheckoutUser.MultiSelect = false;
+            this.lvListSelfCheckoutUser.Name = "lvListSelfCheckoutUser";
+            this.lvListSelfCheckoutUser.UseCompatibleStateImageBehavior = false;
+            this.lvListSelfCheckoutUser.View = System.Windows.Forms.View.Details;
+            this.lvListSelfCheckoutUser.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.lvListSelfCheckoutUser_ItemSelectionChanged);
+            // 
+            // nameSelfCheckoutColumn
+            // 
+            resources.ApplyResources(this.nameSelfCheckoutColumn, "nameSelfCheckoutColumn");
+            // 
+            // codeSelfCheckoutColumn
+            // 
+            resources.ApplyResources(this.codeSelfCheckoutColumn, "codeSelfCheckoutColumn");
+            // 
+            // addressSelfCheckoutColumn
+            // 
+            resources.ApplyResources(this.addressSelfCheckoutColumn, "addressSelfCheckoutColumn");
+            // 
+            // lbListSelfCheckoutText
+            // 
+            resources.ApplyResources(this.lbListSelfCheckoutText, "lbListSelfCheckoutText");
+            this.lbListSelfCheckoutText.Name = "lbListSelfCheckoutText";
+            // 
+            // btnPay
+            // 
+            resources.ApplyResources(this.btnPay, "btnPay");
+            this.btnPay.Name = "btnPay";
+            this.btnPay.UseVisualStyleBackColor = true;
+            this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
+            // 
+            // tbAmountUser
+            // 
+            resources.ApplyResources(this.tbAmountUser, "tbAmountUser");
+            this.tbAmountUser.Name = "tbAmountUser";
+            // 
+            // lbAmountUserText
+            // 
+            resources.ApplyResources(this.lbAmountUserText, "lbAmountUserText");
+            this.lbAmountUserText.Name = "lbAmountUserText";
             // 
             // lbCartAmount
             // 
@@ -453,17 +560,19 @@ namespace WindowsFormsApp1
             resources.ApplyResources(this.lbCartAmountText, "lbCartAmountText");
             this.lbCartAmountText.Name = "lbCartAmountText";
             // 
-            // checkBox2
+            // cbLoyaltyCard
             // 
-            resources.ApplyResources(this.checkBox2, "checkBox2");
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.cbLoyaltyCard, "cbLoyaltyCard");
+            this.cbLoyaltyCard.Name = "cbLoyaltyCard";
+            this.cbLoyaltyCard.UseVisualStyleBackColor = true;
+            this.cbLoyaltyCard.CheckedChanged += new System.EventHandler(this.cbLoyaltyCard_CheckedChanged);
             // 
-            // checkBox1
+            // cbDeliveryCart
             // 
-            resources.ApplyResources(this.checkBox1, "checkBox1");
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.cbDeliveryCart, "cbDeliveryCart");
+            this.cbDeliveryCart.Name = "cbDeliveryCart";
+            this.cbDeliveryCart.UseVisualStyleBackColor = true;
+            this.cbDeliveryCart.CheckedChanged += new System.EventHandler(this.cbDeliveryCart_CheckedChanged);
             // 
             // lbPayType
             // 
@@ -478,28 +587,9 @@ namespace WindowsFormsApp1
             // cbPayType
             // 
             this.cbPayType.FormattingEnabled = true;
-            this.cbPayType.Items.AddRange(new object[] {
-            resources.GetString("cbPayType.Items"),
-            resources.GetString("cbPayType.Items1"),
-            resources.GetString("cbPayType.Items2")});
             resources.ApplyResources(this.cbPayType, "cbPayType");
             this.cbPayType.Name = "cbPayType";
-            // 
-            // lbCountCartRemove
-            // 
-            resources.ApplyResources(this.lbCountCartRemove, "lbCountCartRemove");
-            this.lbCountCartRemove.Name = "lbCountCartRemove";
-            // 
-            // textBox1
-            // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
-            // 
-            // btnCartRemove
-            // 
-            resources.ApplyResources(this.btnCartRemove, "btnCartRemove");
-            this.btnCartRemove.Name = "btnCartRemove";
-            this.btnCartRemove.UseVisualStyleBackColor = true;
+            this.cbPayType.SelectedIndexChanged += new System.EventHandler(this.cbPayType_SelectedIndexChanged);
             // 
             // lbCartText
             // 
@@ -553,38 +643,12 @@ namespace WindowsFormsApp1
             resources.ApplyResources(this.btnAddProductToCart, "btnAddProductToCart");
             this.btnAddProductToCart.Name = "btnAddProductToCart";
             this.btnAddProductToCart.UseVisualStyleBackColor = true;
+            this.btnAddProductToCart.Click += new System.EventHandler(this.btnAddProductToCart_Click);
             // 
             // lbProductsListUser
             // 
             resources.ApplyResources(this.lbProductsListUser, "lbProductsListUser");
             this.lbProductsListUser.Name = "lbProductsListUser";
-            // 
-            // lvProductsListUser
-            // 
-            this.lvProductsListUser.Activation = System.Windows.Forms.ItemActivation.OneClick;
-            this.lvProductsListUser.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3});
-            this.lvProductsListUser.HideSelection = false;
-            this.lvProductsListUser.HoverSelection = true;
-            resources.ApplyResources(this.lvProductsListUser, "lvProductsListUser");
-            this.lvProductsListUser.MultiSelect = false;
-            this.lvProductsListUser.Name = "lvProductsListUser";
-            this.lvProductsListUser.UseCompatibleStateImageBehavior = false;
-            this.lvProductsListUser.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            resources.ApplyResources(this.columnHeader1, "columnHeader1");
-            // 
-            // columnHeader2
-            // 
-            resources.ApplyResources(this.columnHeader2, "columnHeader2");
-            // 
-            // columnHeader3
-            // 
-            resources.ApplyResources(this.columnHeader3, "columnHeader3");
             // 
             // lbUserMoney
             // 
@@ -603,14 +667,74 @@ namespace WindowsFormsApp1
             this.btnBackUser.UseVisualStyleBackColor = true;
             this.btnBackUser.Click += new System.EventHandler(this.btnBackUser_Click);
             // 
+            // lbErrorPay
+            // 
+            resources.ApplyResources(this.lbErrorPay, "lbErrorPay");
+            this.lbErrorPay.ForeColor = System.Drawing.Color.Tomato;
+            this.lbErrorPay.Name = "lbErrorPay";
+            // 
+            // btnSortByWithdrawCash
+            // 
+            resources.ApplyResources(this.btnSortByWithdrawCash, "btnSortByWithdrawCash");
+            this.btnSortByWithdrawCash.Name = "btnSortByWithdrawCash";
+            this.btnSortByWithdrawCash.UseVisualStyleBackColor = true;
+            this.btnSortByWithdrawCash.Click += new System.EventHandler(this.btnSortByWithdrawCash_Click);
+            // 
+            // btnSortByBuyWithCard
+            // 
+            resources.ApplyResources(this.btnSortByBuyWithCard, "btnSortByBuyWithCard");
+            this.btnSortByBuyWithCard.Name = "btnSortByBuyWithCard";
+            this.btnSortByBuyWithCard.UseVisualStyleBackColor = true;
+            this.btnSortByBuyWithCard.Click += new System.EventHandler(this.btnSortByBuyWithCard_Click);
+            // 
+            // btnSortByBuyWithCash
+            // 
+            resources.ApplyResources(this.btnSortByBuyWithCash, "btnSortByBuyWithCash");
+            this.btnSortByBuyWithCash.Name = "btnSortByBuyWithCash";
+            this.btnSortByBuyWithCash.UseVisualStyleBackColor = true;
+            this.btnSortByBuyWithCash.Click += new System.EventHandler(this.btnSortByBuyWithCash_Click);
+            // 
+            // btnSortByAddProduct
+            // 
+            resources.ApplyResources(this.btnSortByAddProduct, "btnSortByAddProduct");
+            this.btnSortByAddProduct.Name = "btnSortByAddProduct";
+            this.btnSortByAddProduct.UseVisualStyleBackColor = true;
+            this.btnSortByAddProduct.Click += new System.EventHandler(this.btnSortByAddProduct_Click);
+            // 
+            // btnSortByGiveChange
+            // 
+            resources.ApplyResources(this.btnSortByGiveChange, "btnSortByGiveChange");
+            this.btnSortByGiveChange.Name = "btnSortByGiveChange";
+            this.btnSortByGiveChange.UseVisualStyleBackColor = true;
+            this.btnSortByGiveChange.Click += new System.EventHandler(this.btnSortByGiveChange_Click);
+            // 
+            // btnSortByCashTopUp
+            // 
+            resources.ApplyResources(this.btnSortByCashTopUp, "btnSortByCashTopUp");
+            this.btnSortByCashTopUp.Name = "btnSortByCashTopUp";
+            this.btnSortByCashTopUp.UseVisualStyleBackColor = true;
+            this.btnSortByCashTopUp.Click += new System.EventHandler(this.btnSortByCashTopUp_Click);
+            // 
+            // lbTypeSortTransactoin
+            // 
+            resources.ApplyResources(this.lbTypeSortTransactoin, "lbTypeSortTransactoin");
+            this.lbTypeSortTransactoin.Name = "lbTypeSortTransactoin";
+            // 
+            // btnSortAll
+            // 
+            resources.ApplyResources(this.btnSortAll, "btnSortAll");
+            this.btnSortAll.Name = "btnSortAll";
+            this.btnSortAll.UseVisualStyleBackColor = true;
+            this.btnSortAll.Click += new System.EventHandler(this.btnSortAll_Click);
+            // 
             // UsersMenu
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.userPanel);
-            this.Controls.Add(this.usersPanel);
             this.Controls.Add(this.adminPanel);
             this.Controls.Add(this.editProductPanel);
+            this.Controls.Add(this.userPanel);
+            this.Controls.Add(this.usersPanel);
             this.Name = "UsersMenu";
             this.Load += new System.EventHandler(this.UserMenu_Load);
             this.adminPanel.ResumeLayout(false);
@@ -676,28 +800,43 @@ namespace WindowsFormsApp1
         private Label lbUserMoneyText;
         private Label lbUserMoney;
         private Label lbProductsListUser;
-        private ListView lvProductsListUser;
-        private ColumnHeader columnHeader1;
-        private ColumnHeader columnHeader2;
-        private ColumnHeader columnHeader3;
         private Button btnAddProductToCart;
         private Label lbCountProductsText;
         private TextBox tbCountProducts;
-        private Label lbCountCartRemove;
-        private TextBox textBox1;
-        private Button btnCartRemove;
         private Label lbCartText;
-        private ListView lvCart;
-        private ColumnHeader columnHeader4;
-        private ColumnHeader columnHeader5;
-        private ColumnHeader columnHeader6;
-        private ColumnHeader columnHeader7;
         private ComboBox cbPayType;
         private Label lbPayType;
         private Label lbPayText;
         private Label lbCartAmount;
         private Label lbCartAmountText;
-        private CheckBox checkBox2;
-        private CheckBox checkBox1;
+        private CheckBox cbLoyaltyCard;
+        private CheckBox cbDeliveryCart;
+        private Button btnPay;
+        private TextBox tbAmountUser;
+        private Label lbAmountUserText;
+        private ListView lvListSelfCheckoutUser;
+        private ColumnHeader nameSelfCheckoutColumn;
+        private ColumnHeader codeSelfCheckoutColumn;
+        private ColumnHeader addressSelfCheckoutColumn;
+        private Label lbListSelfCheckoutText;
+        private ListView lvUserProducts;
+        private ColumnHeader nameProductUserColumn;
+        private ColumnHeader codeProductUserColumn;
+        private ColumnHeader priceProductUserColumn;
+        private ListView lvCart;
+        private ColumnHeader columnHeader4;
+        private ColumnHeader columnHeader5;
+        private ColumnHeader columnHeader6;
+        private ColumnHeader columnHeader7;
+        private Label lbErrorProductsUser;
+        private Label lbErrorPay;
+        private Label lbTypeSortTransactoin;
+        private Button btnSortByAddProduct;
+        private Button btnSortByGiveChange;
+        private Button btnSortByCashTopUp;
+        private Button btnSortByBuyWithCash;
+        private Button btnSortByBuyWithCard;
+        private Button btnSortByWithdrawCash;
+        private Button btnSortAll;
     }
 }

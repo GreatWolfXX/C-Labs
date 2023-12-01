@@ -10,9 +10,12 @@ namespace WindowsFormsApp1
     {
         List<Product> Products { get; set; }
         decimal TotalPrice { get; set; }
+        decimal AmountPaid { get; set; }
+        decimal Change { get; set; }
         bool HomeDelivery { get; set; }
 
         void CalculateFinalPrice();
+        void CalculateChange();
     }
 
     public struct CashPayment : Payment
@@ -42,12 +45,19 @@ namespace WindowsFormsApp1
 
             TotalPrice = finalPrice;
         }
+
+        public void CalculateChange()
+        {
+            Change = AmountPaid - TotalPrice;
+        }
     }
 
     public struct CardPayment : Payment
     {
         public  List<Product> Products { get; set; }
         public decimal TotalPrice { get; set; }
+        public decimal AmountPaid { get; set; }
+        public decimal Change { get; set; }
         public bool HasLoyaltyCard { get; set; }
         public bool HomeDelivery { get; set; }
 
@@ -55,6 +65,8 @@ namespace WindowsFormsApp1
         {
             Products = products;
             TotalPrice = totalPrice;
+            AmountPaid = totalPrice;
+            Change = 0;
             HasLoyaltyCard = hasLoyaltyCard;
             HomeDelivery = homeDelivery;
         }
@@ -67,6 +79,11 @@ namespace WindowsFormsApp1
             decimal finalPrice = TotalPrice - discount + deliveryCharge;
 
             TotalPrice = finalPrice;
+        }
+
+        public void CalculateChange()
+        {
+            Change = 0;
         }
     }
 
@@ -94,6 +111,11 @@ namespace WindowsFormsApp1
             decimal finalPrice = TotalPrice - discount + deliveryCharge;
 
             TotalPrice = finalPrice;
+        }
+
+        public void CalculateChange()
+        {
+            Change = AmountPaid - TotalPrice;
         }
     }
 
@@ -124,12 +146,19 @@ namespace WindowsFormsApp1
 
             TotalPrice = finalPrice;
         }
+
+        public void CalculateChange()
+        {
+            Change = AmountPaid - TotalPrice;
+        }
     }
     
     public struct WholesaleCardPayment : Payment
     {
         public List<Product> Products { get; set; }
         public decimal TotalPrice { get; set; }
+        public decimal AmountPaid { get; set; }
+        public decimal Change { get; set; }
         public bool HasLoyaltyCard { get; set; }
         public bool HomeDelivery { get; set; }
 
@@ -137,6 +166,8 @@ namespace WindowsFormsApp1
         {
             Products = products;
             TotalPrice = totalPrice;
+            AmountPaid = totalPrice;
+            Change = 0;
             HasLoyaltyCard = hasLoyaltyCard;
             HomeDelivery = homeDelivery;
         }
@@ -149,6 +180,11 @@ namespace WindowsFormsApp1
             decimal finalPrice = TotalPrice - discount + deliveryCharge;
 
             TotalPrice = finalPrice;
+        }
+
+        public void CalculateChange()
+        {
+            Change = 0;
         }
     }
 
@@ -164,8 +200,8 @@ namespace WindowsFormsApp1
         {
             Products = products;
             TotalPrice = totalPrice;
-            AmountPaid = 9;
-            Change = 9;
+            AmountPaid = 0;
+            Change = 0;
             HomeDelivery = homeDelivery;
         }
 
@@ -177,6 +213,11 @@ namespace WindowsFormsApp1
             decimal finalPrice = TotalPrice - discount + deliveryCharge;
 
             TotalPrice = finalPrice;
+        }
+
+        public void CalculateChange()
+        {
+            Change = AmountPaid - TotalPrice;
         }
     }
 }

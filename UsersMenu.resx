@@ -117,335 +117,251 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;lvTransactions.Name" xml:space="preserve">
-    <value>lvTransactions</value>
-  </data>
-  <data name="&gt;&gt;lvTransactions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lvTransactions.Parent" xml:space="preserve">
-    <value>adminPanel</value>
-  </data>
-  <data name="&gt;&gt;lvTransactions.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lbTextTransactions.Name" xml:space="preserve">
-    <value>lbTextTransactions</value>
-  </data>
-  <data name="&gt;&gt;lbTextTransactions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbTextTransactions.Parent" xml:space="preserve">
-    <value>adminPanel</value>
-  </data>
-  <data name="&gt;&gt;lbTextTransactions.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;lbTextSlefCheckout.Name" xml:space="preserve">
-    <value>lbTextSlefCheckout</value>
-  </data>
-  <data name="&gt;&gt;lbTextSlefCheckout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbTextSlefCheckout.Parent" xml:space="preserve">
-    <value>adminPanel</value>
-  </data>
-  <data name="&gt;&gt;lbTextSlefCheckout.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;lbCashBalanceText.Name" xml:space="preserve">
-    <value>lbCashBalanceText</value>
-  </data>
-  <data name="&gt;&gt;lbCashBalanceText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbCashBalanceText.Parent" xml:space="preserve">
-    <value>adminPanel</value>
-  </data>
-  <data name="&gt;&gt;lbCashBalanceText.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;lbCashBalance.Name" xml:space="preserve">
-    <value>lbCashBalance</value>
-  </data>
-  <data name="&gt;&gt;lbCashBalance.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbCashBalance.Parent" xml:space="preserve">
-    <value>adminPanel</value>
-  </data>
-  <data name="&gt;&gt;lbCashBalance.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;lbErrorCash.Name" xml:space="preserve">
-    <value>lbErrorCash</value>
-  </data>
-  <data name="&gt;&gt;lbErrorCash.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbErrorCash.Parent" xml:space="preserve">
-    <value>adminPanel</value>
-  </data>
-  <data name="&gt;&gt;lbErrorCash.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;btnUploadCash.Name" xml:space="preserve">
-    <value>btnUploadCash</value>
-  </data>
-  <data name="&gt;&gt;btnUploadCash.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnUploadCash.Parent" xml:space="preserve">
-    <value>adminPanel</value>
-  </data>
-  <data name="&gt;&gt;btnUploadCash.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;btnWithdraw.Name" xml:space="preserve">
-    <value>btnWithdraw</value>
-  </data>
-  <data name="&gt;&gt;btnWithdraw.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnWithdraw.Parent" xml:space="preserve">
-    <value>adminPanel</value>
-  </data>
-  <data name="&gt;&gt;btnWithdraw.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;tbCash.Name" xml:space="preserve">
-    <value>tbCash</value>
-  </data>
-  <data name="&gt;&gt;tbCash.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbCash.Parent" xml:space="preserve">
-    <value>adminPanel</value>
-  </data>
-  <data name="&gt;&gt;tbCash.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;lbWithdrawCash.Name" xml:space="preserve">
-    <value>lbWithdrawCash</value>
-  </data>
-  <data name="&gt;&gt;lbWithdrawCash.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbWithdrawCash.Parent" xml:space="preserve">
-    <value>adminPanel</value>
-  </data>
-  <data name="&gt;&gt;lbWithdrawCash.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;lbError.Name" xml:space="preserve">
-    <value>lbError</value>
-  </data>
-  <data name="&gt;&gt;lbError.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbError.Parent" xml:space="preserve">
-    <value>adminPanel</value>
-  </data>
-  <data name="&gt;&gt;lbError.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;btnBackAdminPanel.Name" xml:space="preserve">
-    <value>btnBackAdminPanel</value>
-  </data>
-  <data name="&gt;&gt;btnBackAdminPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnBackAdminPanel.Parent" xml:space="preserve">
-    <value>adminPanel</value>
-  </data>
-  <data name="&gt;&gt;btnBackAdminPanel.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;listSelfCheckout.Name" xml:space="preserve">
-    <value>listSelfCheckout</value>
-  </data>
-  <data name="&gt;&gt;listSelfCheckout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;listSelfCheckout.Parent" xml:space="preserve">
-    <value>adminPanel</value>
-  </data>
-  <data name="&gt;&gt;listSelfCheckout.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;btnChangeSelfCheckout.Name" xml:space="preserve">
-    <value>btnChangeSelfCheckout</value>
-  </data>
-  <data name="&gt;&gt;btnChangeSelfCheckout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnChangeSelfCheckout.Parent" xml:space="preserve">
-    <value>adminPanel</value>
-  </data>
-  <data name="&gt;&gt;btnChangeSelfCheckout.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;cbOnlineOrderDeliveryCash.Name" xml:space="preserve">
-    <value>cbOnlineOrderDeliveryCash</value>
-  </data>
-  <data name="&gt;&gt;cbOnlineOrderDeliveryCash.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cbOnlineOrderDeliveryCash.Parent" xml:space="preserve">
-    <value>adminPanel</value>
-  </data>
-  <data name="&gt;&gt;cbOnlineOrderDeliveryCash.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;tbModel.Name" xml:space="preserve">
-    <value>tbModel</value>
-  </data>
-  <data name="&gt;&gt;tbModel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbModel.Parent" xml:space="preserve">
-    <value>adminPanel</value>
-  </data>
-  <data name="&gt;&gt;tbModel.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;cbCardPayment.Name" xml:space="preserve">
-    <value>cbCardPayment</value>
-  </data>
-  <data name="&gt;&gt;cbCardPayment.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cbCardPayment.Parent" xml:space="preserve">
-    <value>adminPanel</value>
-  </data>
-  <data name="&gt;&gt;cbCardPayment.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;lbFormCreatingSelfCheckout.Name" xml:space="preserve">
-    <value>lbFormCreatingSelfCheckout</value>
-  </data>
-  <data name="&gt;&gt;lbFormCreatingSelfCheckout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbFormCreatingSelfCheckout.Parent" xml:space="preserve">
-    <value>adminPanel</value>
-  </data>
-  <data name="&gt;&gt;lbFormCreatingSelfCheckout.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;cbOnlinOrder.Name" xml:space="preserve">
-    <value>cbOnlinOrder</value>
-  </data>
-  <data name="&gt;&gt;cbOnlinOrder.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cbOnlinOrder.Parent" xml:space="preserve">
-    <value>adminPanel</value>
-  </data>
-  <data name="&gt;&gt;cbOnlinOrder.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;cbOnlineOrderDelivery.Name" xml:space="preserve">
-    <value>cbOnlineOrderDelivery</value>
-  </data>
-  <data name="&gt;&gt;cbOnlineOrderDelivery.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cbOnlineOrderDelivery.Parent" xml:space="preserve">
-    <value>adminPanel</value>
-  </data>
-  <data name="&gt;&gt;cbOnlineOrderDelivery.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;tbName.Name" xml:space="preserve">
-    <value>tbName</value>
-  </data>
-  <data name="&gt;&gt;tbName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbName.Parent" xml:space="preserve">
-    <value>adminPanel</value>
-  </data>
-  <data name="&gt;&gt;tbName.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;btnCreateSelfCheckout.Name" xml:space="preserve">
-    <value>btnCreateSelfCheckout</value>
-  </data>
-  <data name="&gt;&gt;btnCreateSelfCheckout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnCreateSelfCheckout.Parent" xml:space="preserve">
-    <value>adminPanel</value>
-  </data>
-  <data name="&gt;&gt;btnCreateSelfCheckout.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;tbAddress.Name" xml:space="preserve">
-    <value>tbAddress</value>
-  </data>
-  <data name="&gt;&gt;tbAddress.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbAddress.Parent" xml:space="preserve">
-    <value>adminPanel</value>
-  </data>
-  <data name="&gt;&gt;tbAddress.ZOrder" xml:space="preserve">
-    <value>22</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnSortAll.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="adminPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, -1</value>
+  <data name="btnSortAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1110, 516</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="adminPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnSortAll.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="adminPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1412, 598</value>
+  <data name="btnSortAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 43</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="adminPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+  <data name="btnSortAll.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
   </data>
-  <data name="adminPanel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="btnSortAll.Text" xml:space="preserve">
+    <value>Показати все</value>
   </data>
-  <data name="&gt;&gt;adminPanel.Name" xml:space="preserve">
+  <data name="&gt;&gt;btnSortAll.Name" xml:space="preserve">
+    <value>btnSortAll</value>
+  </data>
+  <data name="&gt;&gt;btnSortAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSortAll.Parent" xml:space="preserve">
     <value>adminPanel</value>
   </data>
-  <data name="&gt;&gt;adminPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btnSortAll.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;adminPanel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="lbTypeSortTransactoin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;adminPanel.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="lbTypeSortTransactoin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="lvTransactions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>963, 100</value>
+  <data name="lbTypeSortTransactoin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>998, 358</value>
   </data>
-  <data name="lvTransactions.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="lbTypeSortTransactoin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 30</value>
+  </data>
+  <data name="lbTypeSortTransactoin.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="lbTypeSortTransactoin.Text" xml:space="preserve">
+    <value>Тип сортування транзакцій</value>
+  </data>
+  <data name="lbTypeSortTransactoin.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lbTypeSortTransactoin.Name" xml:space="preserve">
+    <value>lbTypeSortTransactoin</value>
+  </data>
+  <data name="&gt;&gt;lbTypeSortTransactoin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbTypeSortTransactoin.Parent" xml:space="preserve">
+    <value>adminPanel</value>
+  </data>
+  <data name="&gt;&gt;lbTypeSortTransactoin.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnSortByAddProduct.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnSortByAddProduct.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1254, 458</value>
+  </data>
+  <data name="btnSortByAddProduct.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="lvTransactions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>418, 254</value>
+  <data name="btnSortByAddProduct.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 45</value>
   </data>
-  <data name="lvTransactions.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
+  <data name="btnSortByAddProduct.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
   </data>
-  <data name="&gt;&gt;lvTransactions.Name" xml:space="preserve">
-    <value>lvTransactions</value>
+  <data name="btnSortByAddProduct.Text" xml:space="preserve">
+    <value>Додавання продукту</value>
   </data>
-  <data name="&gt;&gt;lvTransactions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btnSortByAddProduct.Name" xml:space="preserve">
+    <value>btnSortByAddProduct</value>
   </data>
-  <data name="&gt;&gt;lvTransactions.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnSortByAddProduct.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSortByAddProduct.Parent" xml:space="preserve">
     <value>adminPanel</value>
   </data>
-  <data name="&gt;&gt;lvTransactions.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;btnSortByAddProduct.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnSortByGiveChange.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnSortByGiveChange.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1110, 458</value>
+  </data>
+  <data name="btnSortByGiveChange.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="btnSortByGiveChange.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 43</value>
+  </data>
+  <data name="btnSortByGiveChange.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="btnSortByGiveChange.Text" xml:space="preserve">
+    <value>Решта</value>
+  </data>
+  <data name="&gt;&gt;btnSortByGiveChange.Name" xml:space="preserve">
+    <value>btnSortByGiveChange</value>
+  </data>
+  <data name="&gt;&gt;btnSortByGiveChange.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSortByGiveChange.Parent" xml:space="preserve">
+    <value>adminPanel</value>
+  </data>
+  <data name="&gt;&gt;btnSortByGiveChange.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnSortByCashTopUp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnSortByCashTopUp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>967, 458</value>
+  </data>
+  <data name="btnSortByCashTopUp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="btnSortByCashTopUp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 43</value>
+  </data>
+  <data name="btnSortByCashTopUp.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="btnSortByCashTopUp.Text" xml:space="preserve">
+    <value>Поповнення готівкою</value>
+  </data>
+  <data name="&gt;&gt;btnSortByCashTopUp.Name" xml:space="preserve">
+    <value>btnSortByCashTopUp</value>
+  </data>
+  <data name="&gt;&gt;btnSortByCashTopUp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSortByCashTopUp.Parent" xml:space="preserve">
+    <value>adminPanel</value>
+  </data>
+  <data name="&gt;&gt;btnSortByCashTopUp.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnSortByBuyWithCash.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnSortByBuyWithCash.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1254, 392</value>
+  </data>
+  <data name="btnSortByBuyWithCash.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="btnSortByBuyWithCash.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 46</value>
+  </data>
+  <data name="btnSortByBuyWithCash.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="btnSortByBuyWithCash.Text" xml:space="preserve">
+    <value>Покупка готівкою</value>
+  </data>
+  <data name="&gt;&gt;btnSortByBuyWithCash.Name" xml:space="preserve">
+    <value>btnSortByBuyWithCash</value>
+  </data>
+  <data name="&gt;&gt;btnSortByBuyWithCash.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSortByBuyWithCash.Parent" xml:space="preserve">
+    <value>adminPanel</value>
+  </data>
+  <data name="&gt;&gt;btnSortByBuyWithCash.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnSortByBuyWithCard.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnSortByBuyWithCard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1110, 392</value>
+  </data>
+  <data name="btnSortByBuyWithCard.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="btnSortByBuyWithCard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 44</value>
+  </data>
+  <data name="btnSortByBuyWithCard.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="btnSortByBuyWithCard.Text" xml:space="preserve">
+    <value>Покупка карткою</value>
+  </data>
+  <data name="&gt;&gt;btnSortByBuyWithCard.Name" xml:space="preserve">
+    <value>btnSortByBuyWithCard</value>
+  </data>
+  <data name="&gt;&gt;btnSortByBuyWithCard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSortByBuyWithCard.Parent" xml:space="preserve">
+    <value>adminPanel</value>
+  </data>
+  <data name="&gt;&gt;btnSortByBuyWithCard.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnSortByWithdrawCash.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnSortByWithdrawCash.Location" type="System.Drawing.Point, System.Drawing">
+    <value>967, 393</value>
+  </data>
+  <data name="btnSortByWithdrawCash.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="btnSortByWithdrawCash.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 43</value>
+  </data>
+  <data name="btnSortByWithdrawCash.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="btnSortByWithdrawCash.Text" xml:space="preserve">
+    <value>Зняття готівки</value>
+  </data>
+  <data name="&gt;&gt;btnSortByWithdrawCash.Name" xml:space="preserve">
+    <value>btnSortByWithdrawCash</value>
+  </data>
+  <data name="&gt;&gt;btnSortByWithdrawCash.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSortByWithdrawCash.Parent" xml:space="preserve">
+    <value>adminPanel</value>
+  </data>
+  <data name="&gt;&gt;btnSortByWithdrawCash.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="timeColumn.Text" xml:space="preserve">
     <value>Час</value>
@@ -471,6 +387,30 @@
   <data name="amountColumn.Width" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
+  <data name="lvTransactions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>963, 100</value>
+  </data>
+  <data name="lvTransactions.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="lvTransactions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>418, 254</value>
+  </data>
+  <data name="lvTransactions.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;lvTransactions.Name" xml:space="preserve">
+    <value>lvTransactions</value>
+  </data>
+  <data name="&gt;&gt;lvTransactions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lvTransactions.Parent" xml:space="preserve">
+    <value>adminPanel</value>
+  </data>
+  <data name="&gt;&gt;lvTransactions.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
   <data name="lbTextTransactions.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 10pt, style=Bold</value>
   </data>
@@ -487,7 +427,7 @@
     <value>33</value>
   </data>
   <data name="lbTextTransactions.Text" xml:space="preserve">
-    <value>Список транзакций каси</value>
+    <value>Список транзакцій каси</value>
   </data>
   <data name="lbTextTransactions.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -502,7 +442,7 @@
     <value>adminPanel</value>
   </data>
   <data name="&gt;&gt;lbTextTransactions.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>9</value>
   </data>
   <data name="lbTextSlefCheckout.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 10pt, style=Bold</value>
@@ -535,7 +475,7 @@
     <value>adminPanel</value>
   </data>
   <data name="&gt;&gt;lbTextSlefCheckout.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>10</value>
   </data>
   <data name="lbCashBalanceText.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 10pt, style=Bold</value>
@@ -568,7 +508,7 @@
     <value>adminPanel</value>
   </data>
   <data name="&gt;&gt;lbCashBalanceText.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>11</value>
   </data>
   <data name="lbCashBalance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 10pt, style=Bold</value>
@@ -598,7 +538,7 @@
     <value>adminPanel</value>
   </data>
   <data name="&gt;&gt;lbCashBalance.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>12</value>
   </data>
   <data name="lbErrorCash.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 7.8pt, style=Bold</value>
@@ -625,7 +565,7 @@
     <value>adminPanel</value>
   </data>
   <data name="&gt;&gt;lbErrorCash.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>13</value>
   </data>
   <data name="btnUploadCash.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -655,7 +595,7 @@
     <value>adminPanel</value>
   </data>
   <data name="&gt;&gt;btnUploadCash.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>14</value>
   </data>
   <data name="btnWithdraw.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -685,7 +625,7 @@
     <value>adminPanel</value>
   </data>
   <data name="&gt;&gt;btnWithdraw.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>15</value>
   </data>
   <data name="tbCash.Location" type="System.Drawing.Point, System.Drawing">
     <value>713, 140</value>
@@ -709,7 +649,7 @@
     <value>adminPanel</value>
   </data>
   <data name="&gt;&gt;tbCash.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>16</value>
   </data>
   <data name="lbWithdrawCash.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 10pt, style=Bold</value>
@@ -742,7 +682,7 @@
     <value>adminPanel</value>
   </data>
   <data name="&gt;&gt;lbWithdrawCash.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>17</value>
   </data>
   <data name="lbError.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 7.8pt, style=Bold</value>
@@ -769,7 +709,7 @@
     <value>adminPanel</value>
   </data>
   <data name="&gt;&gt;lbError.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>18</value>
   </data>
   <data name="btnBackAdminPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 10</value>
@@ -796,7 +736,19 @@
     <value>adminPanel</value>
   </data>
   <data name="&gt;&gt;btnBackAdminPanel.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>19</value>
+  </data>
+  <data name="nameColumn.Text" xml:space="preserve">
+    <value>Назва</value>
+  </data>
+  <data name="modelColumn.Text" xml:space="preserve">
+    <value>Номер</value>
+  </data>
+  <data name="addressColumn.Text" xml:space="preserve">
+    <value>Адресса</value>
+  </data>
+  <data name="addressColumn.Width" type="System.Int32, mscorlib">
+    <value>100</value>
   </data>
   <data name="listSelfCheckout.Location" type="System.Drawing.Point, System.Drawing">
     <value>306, 100</value>
@@ -820,19 +772,7 @@
     <value>adminPanel</value>
   </data>
   <data name="&gt;&gt;listSelfCheckout.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="nameColumn.Text" xml:space="preserve">
-    <value>Назва</value>
-  </data>
-  <data name="modelColumn.Text" xml:space="preserve">
-    <value>Номер</value>
-  </data>
-  <data name="addressColumn.Text" xml:space="preserve">
-    <value>Адресса</value>
-  </data>
-  <data name="addressColumn.Width" type="System.Int32, mscorlib">
-    <value>100</value>
+    <value>20</value>
   </data>
   <data name="btnChangeSelfCheckout.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -862,7 +802,7 @@
     <value>adminPanel</value>
   </data>
   <data name="&gt;&gt;btnChangeSelfCheckout.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>21</value>
   </data>
   <data name="cbOnlineOrderDeliveryCash.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -892,7 +832,7 @@
     <value>adminPanel</value>
   </data>
   <data name="&gt;&gt;cbOnlineOrderDeliveryCash.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>22</value>
   </data>
   <data name="tbModel.Location" type="System.Drawing.Point, System.Drawing">
     <value>54, 130</value>
@@ -916,7 +856,7 @@
     <value>adminPanel</value>
   </data>
   <data name="&gt;&gt;tbModel.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>23</value>
   </data>
   <data name="cbCardPayment.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -946,7 +886,7 @@
     <value>adminPanel</value>
   </data>
   <data name="&gt;&gt;cbCardPayment.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>24</value>
   </data>
   <data name="lbFormCreatingSelfCheckout.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 10pt, style=Bold</value>
@@ -979,7 +919,7 @@
     <value>adminPanel</value>
   </data>
   <data name="&gt;&gt;lbFormCreatingSelfCheckout.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>25</value>
   </data>
   <data name="cbOnlinOrder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1009,7 +949,7 @@
     <value>adminPanel</value>
   </data>
   <data name="&gt;&gt;cbOnlinOrder.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>26</value>
   </data>
   <data name="cbOnlineOrderDelivery.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1039,7 +979,7 @@
     <value>adminPanel</value>
   </data>
   <data name="&gt;&gt;cbOnlineOrderDelivery.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>27</value>
   </data>
   <data name="tbName.Location" type="System.Drawing.Point, System.Drawing">
     <value>54, 103</value>
@@ -1063,7 +1003,7 @@
     <value>adminPanel</value>
   </data>
   <data name="&gt;&gt;tbName.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>28</value>
   </data>
   <data name="btnCreateSelfCheckout.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1093,7 +1033,7 @@
     <value>adminPanel</value>
   </data>
   <data name="&gt;&gt;btnCreateSelfCheckout.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>29</value>
   </data>
   <data name="tbAddress.Location" type="System.Drawing.Point, System.Drawing">
     <value>54, 156</value>
@@ -1117,55 +1057,34 @@
     <value>adminPanel</value>
   </data>
   <data name="&gt;&gt;tbAddress.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>30</value>
   </data>
-  <data name="&gt;&gt;btnUser.Name" xml:space="preserve">
-    <value>btnUser</value>
+  <data name="adminPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, -1</value>
   </data>
-  <data name="&gt;&gt;btnUser.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnUser.Parent" xml:space="preserve">
-    <value>usersPanel</value>
-  </data>
-  <data name="&gt;&gt;btnUser.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnAdmin.Name" xml:space="preserve">
-    <value>btnAdmin</value>
-  </data>
-  <data name="&gt;&gt;btnAdmin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnAdmin.Parent" xml:space="preserve">
-    <value>usersPanel</value>
-  </data>
-  <data name="&gt;&gt;btnAdmin.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="usersPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>606, 227</value>
-  </data>
-  <data name="usersPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="adminPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="usersPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 120</value>
+  <data name="adminPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1412, 598</value>
   </data>
-  <data name="usersPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="adminPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
-  <data name="&gt;&gt;usersPanel.Name" xml:space="preserve">
-    <value>usersPanel</value>
+  <data name="adminPanel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;usersPanel.Type" xml:space="preserve">
+  <data name="&gt;&gt;adminPanel.Name" xml:space="preserve">
+    <value>adminPanel</value>
+  </data>
+  <data name="&gt;&gt;adminPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;usersPanel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;adminPanel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;usersPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;adminPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="btnUser.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1227,124 +1146,28 @@
   <data name="&gt;&gt;btnAdmin.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;lbErrorProducts.Name" xml:space="preserve">
-    <value>lbErrorProducts</value>
+  <data name="usersPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>606, 227</value>
   </data>
-  <data name="&gt;&gt;lbErrorProducts.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="usersPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="&gt;&gt;lbErrorProducts.Parent" xml:space="preserve">
-    <value>editProductPanel</value>
+  <data name="usersPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 120</value>
   </data>
-  <data name="&gt;&gt;lbErrorProducts.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="usersPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
-  <data name="&gt;&gt;btnBackProducts.Name" xml:space="preserve">
-    <value>btnBackProducts</value>
+  <data name="&gt;&gt;usersPanel.Name" xml:space="preserve">
+    <value>usersPanel</value>
   </data>
-  <data name="&gt;&gt;btnBackProducts.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnBackProducts.Parent" xml:space="preserve">
-    <value>editProductPanel</value>
-  </data>
-  <data name="&gt;&gt;btnBackProducts.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btnCreateProduct.Name" xml:space="preserve">
-    <value>btnCreateProduct</value>
-  </data>
-  <data name="&gt;&gt;btnCreateProduct.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnCreateProduct.Parent" xml:space="preserve">
-    <value>editProductPanel</value>
-  </data>
-  <data name="&gt;&gt;btnCreateProduct.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tbPriceProduct.Name" xml:space="preserve">
-    <value>tbPriceProduct</value>
-  </data>
-  <data name="&gt;&gt;tbPriceProduct.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbPriceProduct.Parent" xml:space="preserve">
-    <value>editProductPanel</value>
-  </data>
-  <data name="&gt;&gt;tbPriceProduct.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;tbCodeProduct.Name" xml:space="preserve">
-    <value>tbCodeProduct</value>
-  </data>
-  <data name="&gt;&gt;tbCodeProduct.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbCodeProduct.Parent" xml:space="preserve">
-    <value>editProductPanel</value>
-  </data>
-  <data name="&gt;&gt;tbCodeProduct.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;tbNameProduct.Name" xml:space="preserve">
-    <value>tbNameProduct</value>
-  </data>
-  <data name="&gt;&gt;tbNameProduct.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbNameProduct.Parent" xml:space="preserve">
-    <value>editProductPanel</value>
-  </data>
-  <data name="&gt;&gt;tbNameProduct.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;lbEditProduct.Name" xml:space="preserve">
-    <value>lbEditProduct</value>
-  </data>
-  <data name="&gt;&gt;lbEditProduct.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbEditProduct.Parent" xml:space="preserve">
-    <value>editProductPanel</value>
-  </data>
-  <data name="&gt;&gt;lbEditProduct.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;lvProducts.Name" xml:space="preserve">
-    <value>lvProducts</value>
-  </data>
-  <data name="&gt;&gt;lvProducts.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lvProducts.Parent" xml:space="preserve">
-    <value>editProductPanel</value>
-  </data>
-  <data name="&gt;&gt;lvProducts.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="editProductPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 2</value>
-  </data>
-  <data name="editProductPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1410, 598</value>
-  </data>
-  <data name="editProductPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="editProductPanel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;editProductPanel.Name" xml:space="preserve">
-    <value>editProductPanel</value>
-  </data>
-  <data name="&gt;&gt;editProductPanel.Type" xml:space="preserve">
+  <data name="&gt;&gt;usersPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;editProductPanel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;usersPanel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;editProductPanel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;usersPanel.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="lbErrorProducts.Font" type="System.Drawing.Font, System.Drawing">
@@ -1521,6 +1344,18 @@
   <data name="&gt;&gt;lbEditProduct.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="nameColumnProduct.Text" xml:space="preserve">
+    <value>Назва</value>
+  </data>
+  <data name="codeColumnProduct.Text" xml:space="preserve">
+    <value>Код</value>
+  </data>
+  <data name="priceColumnProduct.Text" xml:space="preserve">
+    <value>Ціна</value>
+  </data>
+  <data name="priceColumnProduct.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
   <data name="lvProducts.Location" type="System.Drawing.Point, System.Drawing">
     <value>446, 39</value>
   </data>
@@ -1542,17 +1377,266 @@
   <data name="&gt;&gt;lvProducts.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="nameColumnProduct.Text" xml:space="preserve">
+  <data name="editProductPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 2</value>
+  </data>
+  <data name="editProductPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1410, 598</value>
+  </data>
+  <data name="editProductPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="editProductPanel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;editProductPanel.Name" xml:space="preserve">
+    <value>editProductPanel</value>
+  </data>
+  <data name="&gt;&gt;editProductPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editProductPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;editProductPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbErrorPay.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 7.8pt, style=Bold</value>
+  </data>
+  <data name="lbErrorPay.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbErrorPay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1140, 330</value>
+  </data>
+  <data name="lbErrorPay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>248, 60</value>
+  </data>
+  <data name="lbErrorPay.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;lbErrorPay.Name" xml:space="preserve">
+    <value>lbErrorPay</value>
+  </data>
+  <data name="&gt;&gt;lbErrorPay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbErrorPay.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;lbErrorPay.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lbErrorProductsUser.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 7.8pt, style=Bold</value>
+  </data>
+  <data name="lbErrorProductsUser.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbErrorProductsUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 483</value>
+  </data>
+  <data name="lbErrorProductsUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 60</value>
+  </data>
+  <data name="lbErrorProductsUser.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;lbErrorProductsUser.Name" xml:space="preserve">
+    <value>lbErrorProductsUser</value>
+  </data>
+  <data name="&gt;&gt;lbErrorProductsUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbErrorProductsUser.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;lbErrorProductsUser.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="nameProductUserColumn.Text" xml:space="preserve">
     <value>Назва</value>
   </data>
-  <data name="codeColumnProduct.Text" xml:space="preserve">
+  <data name="codeProductUserColumn.Text" xml:space="preserve">
     <value>Код</value>
   </data>
-  <data name="priceColumnProduct.Text" xml:space="preserve">
+  <data name="priceProductUserColumn.Text" xml:space="preserve">
     <value>Ціна</value>
   </data>
-  <data name="priceColumnProduct.Width" type="System.Int32, mscorlib">
+  <data name="priceProductUserColumn.Width" type="System.Int32, mscorlib">
     <value>100</value>
+  </data>
+  <data name="lvUserProducts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>404, 82</value>
+  </data>
+  <data name="lvUserProducts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 355</value>
+  </data>
+  <data name="lvUserProducts.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="&gt;&gt;lvUserProducts.Name" xml:space="preserve">
+    <value>lvUserProducts</value>
+  </data>
+  <data name="&gt;&gt;lvUserProducts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lvUserProducts.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;lvUserProducts.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="nameSelfCheckoutColumn.Text" xml:space="preserve">
+    <value>Назва</value>
+  </data>
+  <data name="codeSelfCheckoutColumn.Text" xml:space="preserve">
+    <value>Номер</value>
+  </data>
+  <data name="addressSelfCheckoutColumn.Text" xml:space="preserve">
+    <value>Адресса</value>
+  </data>
+  <data name="addressSelfCheckoutColumn.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="lvListSelfCheckoutUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 82</value>
+  </data>
+  <data name="lvListSelfCheckoutUser.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="lvListSelfCheckoutUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 355</value>
+  </data>
+  <data name="lvListSelfCheckoutUser.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;lvListSelfCheckoutUser.Name" xml:space="preserve">
+    <value>lvListSelfCheckoutUser</value>
+  </data>
+  <data name="&gt;&gt;lvListSelfCheckoutUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lvListSelfCheckoutUser.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;lvListSelfCheckoutUser.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lbListSelfCheckoutText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbListSelfCheckoutText.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt, style=Bold</value>
+  </data>
+  <data name="lbListSelfCheckoutText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbListSelfCheckoutText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 60</value>
+  </data>
+  <data name="lbListSelfCheckoutText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 20</value>
+  </data>
+  <data name="lbListSelfCheckoutText.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="lbListSelfCheckoutText.Text" xml:space="preserve">
+    <value>Список кас</value>
+  </data>
+  <data name="&gt;&gt;lbListSelfCheckoutText.Name" xml:space="preserve">
+    <value>lbListSelfCheckoutText</value>
+  </data>
+  <data name="&gt;&gt;lbListSelfCheckoutText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbListSelfCheckoutText.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;lbListSelfCheckoutText.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnPay.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnPay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1177, 393</value>
+  </data>
+  <data name="btnPay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 40</value>
+  </data>
+  <data name="btnPay.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="btnPay.Text" xml:space="preserve">
+    <value>Оплатити</value>
+  </data>
+  <data name="&gt;&gt;btnPay.Name" xml:space="preserve">
+    <value>btnPay</value>
+  </data>
+  <data name="&gt;&gt;btnPay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnPay.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;btnPay.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="tbAmountUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1140, 305</value>
+  </data>
+  <data name="tbAmountUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>248, 22</value>
+  </data>
+  <data name="tbAmountUser.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;tbAmountUser.Name" xml:space="preserve">
+    <value>tbAmountUser</value>
+  </data>
+  <data name="&gt;&gt;tbAmountUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbAmountUser.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;tbAmountUser.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lbAmountUserText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbAmountUserText.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt, style=Bold</value>
+  </data>
+  <data name="lbAmountUserText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbAmountUserText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1136, 273</value>
+  </data>
+  <data name="lbAmountUserText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 20</value>
+  </data>
+  <data name="lbAmountUserText.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="lbAmountUserText.Text" xml:space="preserve">
+    <value>Скільки заплатите:</value>
+  </data>
+  <data name="&gt;&gt;lbAmountUserText.Name" xml:space="preserve">
+    <value>lbAmountUserText</value>
+  </data>
+  <data name="&gt;&gt;lbAmountUserText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbAmountUserText.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;lbAmountUserText.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="lbCartAmount.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1564,7 +1648,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbCartAmount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1239, 100</value>
+    <value>1263, 100</value>
   </data>
   <data name="lbCartAmount.Size" type="System.Drawing.Size, System.Drawing">
     <value>19, 20</value>
@@ -1585,7 +1669,7 @@
     <value>userPanel</value>
   </data>
   <data name="&gt;&gt;lbCartAmount.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>8</value>
   </data>
   <data name="lbCartAmountText.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1597,7 +1681,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbCartAmountText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1112, 100</value>
+    <value>1136, 100</value>
   </data>
   <data name="lbCartAmountText.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 20</value>
@@ -1618,64 +1702,67 @@
     <value>userPanel</value>
   </data>
   <data name="&gt;&gt;lbCartAmountText.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>9</value>
   </data>
-  <data name="checkBox2.AutoSize" type="System.Boolean, mscorlib">
+  <data name="cbLoyaltyCard.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="checkBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="cbLoyaltyCard.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="checkBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1116, 226</value>
+  <data name="cbLoyaltyCard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1140, 186</value>
   </data>
-  <data name="checkBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 20</value>
+  <data name="cbLoyaltyCard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 20</value>
   </data>
-  <data name="checkBox2.TabIndex" type="System.Int32, mscorlib">
+  <data name="cbLoyaltyCard.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
   </data>
-  <data name="checkBox2.Text" xml:space="preserve">
-    <value>checkBox2</value>
+  <data name="cbLoyaltyCard.Text" xml:space="preserve">
+    <value>Карта лояльності</value>
   </data>
-  <data name="&gt;&gt;checkBox2.Name" xml:space="preserve">
-    <value>checkBox2</value>
+  <data name="&gt;&gt;cbLoyaltyCard.Name" xml:space="preserve">
+    <value>cbLoyaltyCard</value>
   </data>
-  <data name="&gt;&gt;checkBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;cbLoyaltyCard.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;checkBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cbLoyaltyCard.Parent" xml:space="preserve">
     <value>userPanel</value>
   </data>
-  <data name="&gt;&gt;checkBox2.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;cbLoyaltyCard.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
-  <data name="checkBox1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="cbDeliveryCart.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="checkBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1116, 187</value>
+  <data name="cbDeliveryCart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1140, 223</value>
   </data>
-  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 20</value>
+  <data name="cbDeliveryCart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 20</value>
   </data>
-  <data name="checkBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="cbDeliveryCart.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
   </data>
-  <data name="checkBox1.Text" xml:space="preserve">
-    <value>checkBox1</value>
+  <data name="cbDeliveryCart.Text" xml:space="preserve">
+    <value>Доставка</value>
   </data>
-  <data name="&gt;&gt;checkBox1.Name" xml:space="preserve">
-    <value>checkBox1</value>
+  <data name="cbDeliveryCart.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;checkBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;cbDeliveryCart.Name" xml:space="preserve">
+    <value>cbDeliveryCart</value>
+  </data>
+  <data name="&gt;&gt;cbDeliveryCart.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;checkBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cbDeliveryCart.Parent" xml:space="preserve">
     <value>userPanel</value>
   </data>
-  <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;cbDeliveryCart.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="lbPayType.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1687,7 +1774,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbPayType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1112, 142</value>
+    <value>1136, 142</value>
   </data>
   <data name="lbPayType.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 20</value>
@@ -1708,7 +1795,7 @@
     <value>userPanel</value>
   </data>
   <data name="&gt;&gt;lbPayType.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>12</value>
   </data>
   <data name="lbPayText.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1720,7 +1807,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbPayText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1185, 60</value>
+    <value>1230, 60</value>
   </data>
   <data name="lbPayText.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 20</value>
@@ -1741,19 +1828,10 @@
     <value>userPanel</value>
   </data>
   <data name="&gt;&gt;lbPayText.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="cbPayType.Items" xml:space="preserve">
-    <value>Карткою</value>
-  </data>
-  <data name="cbPayType.Items1" xml:space="preserve">
-    <value>Готівкою</value>
-  </data>
-  <data name="cbPayType.Items2" xml:space="preserve">
-    <value>Готівкою кур'єру</value>
+    <value>13</value>
   </data>
   <data name="cbPayType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1243, 138</value>
+    <value>1267, 138</value>
   </data>
   <data name="cbPayType.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 24</value>
@@ -1771,88 +1849,7 @@
     <value>userPanel</value>
   </data>
   <data name="&gt;&gt;cbPayType.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="lbCountCartRemove.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbCountCartRemove.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.2pt, style=Bold</value>
-  </data>
-  <data name="lbCountCartRemove.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbCountCartRemove.Location" type="System.Drawing.Point, System.Drawing">
-    <value>656, 460</value>
-  </data>
-  <data name="lbCountCartRemove.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 20</value>
-  </data>
-  <data name="lbCountCartRemove.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="lbCountCartRemove.Text" xml:space="preserve">
-    <value>Кількість:</value>
-  </data>
-  <data name="&gt;&gt;lbCountCartRemove.Name" xml:space="preserve">
-    <value>lbCountCartRemove</value>
-  </data>
-  <data name="&gt;&gt;lbCountCartRemove.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbCountCartRemove.Parent" xml:space="preserve">
-    <value>userPanel</value>
-  </data>
-  <data name="&gt;&gt;lbCountCartRemove.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>773, 460</value>
-  </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 22</value>
-  </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
-    <value>userPanel</value>
-  </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="btnCartRemove.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnCartRemove.Location" type="System.Drawing.Point, System.Drawing">
-    <value>683, 502</value>
-  </data>
-  <data name="btnCartRemove.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 40</value>
-  </data>
-  <data name="btnCartRemove.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="btnCartRemove.Text" xml:space="preserve">
-    <value>Видалити товар</value>
-  </data>
-  <data name="&gt;&gt;btnCartRemove.Name" xml:space="preserve">
-    <value>btnCartRemove</value>
-  </data>
-  <data name="&gt;&gt;btnCartRemove.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnCartRemove.Parent" xml:space="preserve">
-    <value>userPanel</value>
-  </data>
-  <data name="&gt;&gt;btnCartRemove.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>14</value>
   </data>
   <data name="lbCartText.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1864,7 +1861,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbCartText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>750, 60</value>
+    <value>886, 60</value>
   </data>
   <data name="lbCartText.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 20</value>
@@ -1885,13 +1882,31 @@
     <value>userPanel</value>
   </data>
   <data name="&gt;&gt;lbCartText.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>15</value>
+  </data>
+  <data name="columnHeader4.Text" xml:space="preserve">
+    <value>Назва</value>
+  </data>
+  <data name="columnHeader5.Text" xml:space="preserve">
+    <value>Код</value>
+  </data>
+  <data name="columnHeader6.Text" xml:space="preserve">
+    <value>Ціна</value>
+  </data>
+  <data name="columnHeader6.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="columnHeader7.Text" xml:space="preserve">
+    <value>Кількість</value>
+  </data>
+  <data name="columnHeader7.Width" type="System.Int32, mscorlib">
+    <value>82</value>
   </data>
   <data name="lvCart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>578, 83</value>
+    <value>760, 83</value>
   </data>
   <data name="lvCart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>410, 355</value>
+    <value>326, 355</value>
   </data>
   <data name="lvCart.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -1906,7 +1921,7 @@
     <value>userPanel</value>
   </data>
   <data name="&gt;&gt;lvCart.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>16</value>
   </data>
   <data name="lbCountProductsText.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1918,7 +1933,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbCountProductsText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 460</value>
+    <value>427, 460</value>
   </data>
   <data name="lbCountProductsText.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 20</value>
@@ -1939,10 +1954,10 @@
     <value>userPanel</value>
   </data>
   <data name="&gt;&gt;lbCountProductsText.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>17</value>
   </data>
   <data name="tbCountProducts.Location" type="System.Drawing.Point, System.Drawing">
-    <value>297, 460</value>
+    <value>547, 460</value>
   </data>
   <data name="tbCountProducts.Size" type="System.Drawing.Size, System.Drawing">
     <value>137, 22</value>
@@ -1960,10 +1975,13 @@
     <value>userPanel</value>
   </data>
   <data name="&gt;&gt;tbCountProducts.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>18</value>
+  </data>
+  <data name="btnAddProductToCart.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btnAddProductToCart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 502</value>
+    <value>452, 546</value>
   </data>
   <data name="btnAddProductToCart.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 40</value>
@@ -1984,7 +2002,7 @@
     <value>userPanel</value>
   </data>
   <data name="&gt;&gt;btnAddProductToCart.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>19</value>
   </data>
   <data name="lbProductsListUser.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1996,7 +2014,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbProductsListUser.Location" type="System.Drawing.Point, System.Drawing">
-    <value>216, 60</value>
+    <value>482, 60</value>
   </data>
   <data name="lbProductsListUser.Size" type="System.Drawing.Size, System.Drawing">
     <value>152, 20</value>
@@ -2017,28 +2035,7 @@
     <value>userPanel</value>
   </data>
   <data name="&gt;&gt;lbProductsListUser.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="lvProductsListUser.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 83</value>
-  </data>
-  <data name="lvProductsListUser.Size" type="System.Drawing.Size, System.Drawing">
-    <value>410, 355</value>
-  </data>
-  <data name="lvProductsListUser.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;lvProductsListUser.Name" xml:space="preserve">
-    <value>lvProductsListUser</value>
-  </data>
-  <data name="&gt;&gt;lvProductsListUser.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lvProductsListUser.Parent" xml:space="preserve">
-    <value>userPanel</value>
-  </data>
-  <data name="&gt;&gt;lvProductsListUser.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>20</value>
   </data>
   <data name="lbUserMoney.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2071,7 +2068,7 @@
     <value>userPanel</value>
   </data>
   <data name="&gt;&gt;lbUserMoney.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>21</value>
   </data>
   <data name="lbUserMoneyText.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2101,7 +2098,7 @@
     <value>userPanel</value>
   </data>
   <data name="&gt;&gt;lbUserMoneyText.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>22</value>
   </data>
   <data name="btnBackUser.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2131,7 +2128,7 @@
     <value>userPanel</value>
   </data>
   <data name="&gt;&gt;btnBackUser.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>23</value>
   </data>
   <data name="userPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, -1</value>
@@ -2155,37 +2152,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;userPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="columnHeader4.Text" xml:space="preserve">
-    <value>Назва</value>
-  </data>
-  <data name="columnHeader5.Text" xml:space="preserve">
-    <value>Код</value>
-  </data>
-  <data name="columnHeader6.Text" xml:space="preserve">
-    <value>Ціна</value>
-  </data>
-  <data name="columnHeader6.Width" type="System.Int32, mscorlib">
-    <value>100</value>
-  </data>
-  <data name="columnHeader7.Text" xml:space="preserve">
-    <value>Кількість</value>
-  </data>
-  <data name="columnHeader7.Width" type="System.Int32, mscorlib">
-    <value>82</value>
-  </data>
-  <data name="columnHeader1.Text" xml:space="preserve">
-    <value>Назва</value>
-  </data>
-  <data name="columnHeader2.Text" xml:space="preserve">
-    <value>Код</value>
-  </data>
-  <data name="columnHeader3.Text" xml:space="preserve">
-    <value>Ціна</value>
-  </data>
-  <data name="columnHeader3.Width" type="System.Int32, mscorlib">
-    <value>100</value>
+    <value>2</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -2262,6 +2229,42 @@
   <data name="&gt;&gt;priceColumnProduct.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;nameProductUserColumn.Name" xml:space="preserve">
+    <value>nameProductUserColumn</value>
+  </data>
+  <data name="&gt;&gt;nameProductUserColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;codeProductUserColumn.Name" xml:space="preserve">
+    <value>codeProductUserColumn</value>
+  </data>
+  <data name="&gt;&gt;codeProductUserColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;priceProductUserColumn.Name" xml:space="preserve">
+    <value>priceProductUserColumn</value>
+  </data>
+  <data name="&gt;&gt;priceProductUserColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nameSelfCheckoutColumn.Name" xml:space="preserve">
+    <value>nameSelfCheckoutColumn</value>
+  </data>
+  <data name="&gt;&gt;nameSelfCheckoutColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;codeSelfCheckoutColumn.Name" xml:space="preserve">
+    <value>codeSelfCheckoutColumn</value>
+  </data>
+  <data name="&gt;&gt;codeSelfCheckoutColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addressSelfCheckoutColumn.Name" xml:space="preserve">
+    <value>addressSelfCheckoutColumn</value>
+  </data>
+  <data name="&gt;&gt;addressSelfCheckoutColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;columnHeader4.Name" xml:space="preserve">
     <value>columnHeader4</value>
   </data>
@@ -2284,24 +2287,6 @@
     <value>columnHeader7</value>
   </data>
   <data name="&gt;&gt;columnHeader7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;columnHeader1.Name" xml:space="preserve">
-    <value>columnHeader1</value>
-  </data>
-  <data name="&gt;&gt;columnHeader1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;columnHeader2.Name" xml:space="preserve">
-    <value>columnHeader2</value>
-  </data>
-  <data name="&gt;&gt;columnHeader2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;columnHeader3.Name" xml:space="preserve">
-    <value>columnHeader3</value>
-  </data>
-  <data name="&gt;&gt;columnHeader3.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

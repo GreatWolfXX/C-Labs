@@ -44,7 +44,7 @@ namespace WindowsFormsApp1
             var result = Products.AddUnique(productToAdd);
             if (result)
             {
-                Transaction.CommitTransaction(this, new Transaction(TransactionType.AddProduct, Users.Cashier, 1));
+                Transaction.CommitTransaction(this, new Transaction(TransactionType.AddProduct, Users.Cashier, productToAdd.Price));
             }
            
         }
@@ -56,7 +56,7 @@ namespace WindowsFormsApp1
                 var result = Products.AddUnique(product);
                 if (result)
                 {
-                    Transaction.CommitTransaction(this, new Transaction(TransactionType.AddProduct, Users.Cashier, 1));
+                    Transaction.CommitTransaction(this, new Transaction(TransactionType.AddProduct, Users.Cashier, product.Price));
                 }
             }
         }
@@ -125,16 +125,50 @@ namespace WindowsFormsApp1
             Transaction.CommitTransaction(this, new Transaction(TransactionType.CashTopUp, Users.Cashier, amount));
         }
 
-        public void CreateTransaction(Payment payment)
+        public Payment CreateTransaction(Payment payment, PaymentType type)
         {
-            /*Transaction.CommitTransaction(this, new(TransactionType.BuyWithCard, Users.System, summ));*/
+            CashBalance += payment.AmountPaid;
+            payment.CalculateChange();
+            switch (type)
+            {
+                case PaymentType.CardRetail:
+                    Transaction.CommitTransaction(this, new Transaction(TransactionType.BuyWithCard, Users.System, payment.AmountPaid));
+                    break;
+               
+                case PaymentType.CardWholesale:
+                    Transaction.CommitTransaction(this, new Transaction(TransactionType.BuyWithCard, Users.System, payment.AmountPaid));
+                    break;
+               
+                default:
+                    Transaction.CommitTransaction(this, new Transaction(TransactionType.BuyWithCash, Users.System, payment.AmountPaid));
+                    break;
+            }
+            if (payment.Change > 0)
+            {
+                Transaction.CommitTransaction(this, new Transaction(TransactionType.GiveChange, Users.System, payment.Change));
+            }
+            return payment;
         }
         public void PrintTransactions() 
         {
             foreach(var transaction in Transactions)
             {
-                /*Console.WriteLine(transaction.ToString());*/
+                Console.WriteLine(transaction.ToString());
             }
+        }
+
+        public List<Transaction> GetTransactionByType(TransactionType transactionType)
+        {
+            List<Transaction> transaction = new List<Transaction>();
+
+            foreach(var item in Transactions)
+            {
+                if(item.TransactionType == transactionType)
+                {
+                    transaction.Add(item);
+                }
+            }
+            return transaction;
         }
 
     }
