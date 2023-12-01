@@ -33,6 +33,14 @@ namespace WindowsFormsApp1
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsersMenu));
             this.adminPanel = new System.Windows.Forms.Panel();
+            this.btnSortAll = new System.Windows.Forms.Button();
+            this.lbTypeSortTransactoin = new System.Windows.Forms.Label();
+            this.btnSortByAddProduct = new System.Windows.Forms.Button();
+            this.btnSortByGiveChange = new System.Windows.Forms.Button();
+            this.btnSortByCashTopUp = new System.Windows.Forms.Button();
+            this.btnSortByBuyWithCash = new System.Windows.Forms.Button();
+            this.btnSortByBuyWithCard = new System.Windows.Forms.Button();
+            this.btnSortByWithdrawCash = new System.Windows.Forms.Button();
             this.lvTransactions = new System.Windows.Forms.ListView();
             this.timeColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.typeColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -79,6 +87,7 @@ namespace WindowsFormsApp1
             this.codeColumnProduct = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.priceColumnProduct = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.userPanel = new System.Windows.Forms.Panel();
+            this.lbErrorPay = new System.Windows.Forms.Label();
             this.lbErrorProductsUser = new System.Windows.Forms.Label();
             this.lvUserProducts = new System.Windows.Forms.ListView();
             this.nameProductUserColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -112,15 +121,6 @@ namespace WindowsFormsApp1
             this.lbUserMoney = new System.Windows.Forms.Label();
             this.lbUserMoneyText = new System.Windows.Forms.Label();
             this.btnBackUser = new System.Windows.Forms.Button();
-            this.lbErrorPay = new System.Windows.Forms.Label();
-            this.btnSortByWithdrawCash = new System.Windows.Forms.Button();
-            this.btnSortByBuyWithCard = new System.Windows.Forms.Button();
-            this.btnSortByBuyWithCash = new System.Windows.Forms.Button();
-            this.btnSortByAddProduct = new System.Windows.Forms.Button();
-            this.btnSortByGiveChange = new System.Windows.Forms.Button();
-            this.btnSortByCashTopUp = new System.Windows.Forms.Button();
-            this.lbTypeSortTransactoin = new System.Windows.Forms.Label();
-            this.btnSortAll = new System.Windows.Forms.Button();
             this.adminPanel.SuspendLayout();
             this.usersPanel.SuspendLayout();
             this.editProductPanel.SuspendLayout();
@@ -162,6 +162,60 @@ namespace WindowsFormsApp1
             this.adminPanel.Controls.Add(this.tbAddress);
             resources.ApplyResources(this.adminPanel, "adminPanel");
             this.adminPanel.Name = "adminPanel";
+            // 
+            // btnSortAll
+            // 
+            resources.ApplyResources(this.btnSortAll, "btnSortAll");
+            this.btnSortAll.Name = "btnSortAll";
+            this.btnSortAll.UseVisualStyleBackColor = true;
+            this.btnSortAll.Click += new System.EventHandler(this.btnSortAll_Click);
+            // 
+            // lbTypeSortTransactoin
+            // 
+            resources.ApplyResources(this.lbTypeSortTransactoin, "lbTypeSortTransactoin");
+            this.lbTypeSortTransactoin.Name = "lbTypeSortTransactoin";
+            // 
+            // btnSortByAddProduct
+            // 
+            resources.ApplyResources(this.btnSortByAddProduct, "btnSortByAddProduct");
+            this.btnSortByAddProduct.Name = "btnSortByAddProduct";
+            this.btnSortByAddProduct.UseVisualStyleBackColor = true;
+            this.btnSortByAddProduct.Click += new System.EventHandler(this.btnSortByAddProduct_Click);
+            // 
+            // btnSortByGiveChange
+            // 
+            resources.ApplyResources(this.btnSortByGiveChange, "btnSortByGiveChange");
+            this.btnSortByGiveChange.Name = "btnSortByGiveChange";
+            this.btnSortByGiveChange.UseVisualStyleBackColor = true;
+            this.btnSortByGiveChange.Click += new System.EventHandler(this.btnSortByGiveChange_Click);
+            // 
+            // btnSortByCashTopUp
+            // 
+            resources.ApplyResources(this.btnSortByCashTopUp, "btnSortByCashTopUp");
+            this.btnSortByCashTopUp.Name = "btnSortByCashTopUp";
+            this.btnSortByCashTopUp.UseVisualStyleBackColor = true;
+            this.btnSortByCashTopUp.Click += new System.EventHandler(this.btnSortByCashTopUp_Click);
+            // 
+            // btnSortByBuyWithCash
+            // 
+            resources.ApplyResources(this.btnSortByBuyWithCash, "btnSortByBuyWithCash");
+            this.btnSortByBuyWithCash.Name = "btnSortByBuyWithCash";
+            this.btnSortByBuyWithCash.UseVisualStyleBackColor = true;
+            this.btnSortByBuyWithCash.Click += new System.EventHandler(this.btnSortByBuyWithCash_Click);
+            // 
+            // btnSortByBuyWithCard
+            // 
+            resources.ApplyResources(this.btnSortByBuyWithCard, "btnSortByBuyWithCard");
+            this.btnSortByBuyWithCard.Name = "btnSortByBuyWithCard";
+            this.btnSortByBuyWithCard.UseVisualStyleBackColor = true;
+            this.btnSortByBuyWithCard.Click += new System.EventHandler(this.btnSortByBuyWithCard_Click);
+            // 
+            // btnSortByWithdrawCash
+            // 
+            resources.ApplyResources(this.btnSortByWithdrawCash, "btnSortByWithdrawCash");
+            this.btnSortByWithdrawCash.Name = "btnSortByWithdrawCash";
+            this.btnSortByWithdrawCash.UseVisualStyleBackColor = true;
+            this.btnSortByWithdrawCash.Click += new System.EventHandler(this.btnSortByWithdrawCash_Click);
             // 
             // lvTransactions
             // 
@@ -470,6 +524,12 @@ namespace WindowsFormsApp1
             resources.ApplyResources(this.userPanel, "userPanel");
             this.userPanel.Name = "userPanel";
             // 
+            // lbErrorPay
+            // 
+            resources.ApplyResources(this.lbErrorPay, "lbErrorPay");
+            this.lbErrorPay.ForeColor = System.Drawing.Color.Tomato;
+            this.lbErrorPay.Name = "lbErrorPay";
+            // 
             // lbErrorProductsUser
             // 
             resources.ApplyResources(this.lbErrorProductsUser, "lbErrorProductsUser");
@@ -667,74 +727,14 @@ namespace WindowsFormsApp1
             this.btnBackUser.UseVisualStyleBackColor = true;
             this.btnBackUser.Click += new System.EventHandler(this.btnBackUser_Click);
             // 
-            // lbErrorPay
-            // 
-            resources.ApplyResources(this.lbErrorPay, "lbErrorPay");
-            this.lbErrorPay.ForeColor = System.Drawing.Color.Tomato;
-            this.lbErrorPay.Name = "lbErrorPay";
-            // 
-            // btnSortByWithdrawCash
-            // 
-            resources.ApplyResources(this.btnSortByWithdrawCash, "btnSortByWithdrawCash");
-            this.btnSortByWithdrawCash.Name = "btnSortByWithdrawCash";
-            this.btnSortByWithdrawCash.UseVisualStyleBackColor = true;
-            this.btnSortByWithdrawCash.Click += new System.EventHandler(this.btnSortByWithdrawCash_Click);
-            // 
-            // btnSortByBuyWithCard
-            // 
-            resources.ApplyResources(this.btnSortByBuyWithCard, "btnSortByBuyWithCard");
-            this.btnSortByBuyWithCard.Name = "btnSortByBuyWithCard";
-            this.btnSortByBuyWithCard.UseVisualStyleBackColor = true;
-            this.btnSortByBuyWithCard.Click += new System.EventHandler(this.btnSortByBuyWithCard_Click);
-            // 
-            // btnSortByBuyWithCash
-            // 
-            resources.ApplyResources(this.btnSortByBuyWithCash, "btnSortByBuyWithCash");
-            this.btnSortByBuyWithCash.Name = "btnSortByBuyWithCash";
-            this.btnSortByBuyWithCash.UseVisualStyleBackColor = true;
-            this.btnSortByBuyWithCash.Click += new System.EventHandler(this.btnSortByBuyWithCash_Click);
-            // 
-            // btnSortByAddProduct
-            // 
-            resources.ApplyResources(this.btnSortByAddProduct, "btnSortByAddProduct");
-            this.btnSortByAddProduct.Name = "btnSortByAddProduct";
-            this.btnSortByAddProduct.UseVisualStyleBackColor = true;
-            this.btnSortByAddProduct.Click += new System.EventHandler(this.btnSortByAddProduct_Click);
-            // 
-            // btnSortByGiveChange
-            // 
-            resources.ApplyResources(this.btnSortByGiveChange, "btnSortByGiveChange");
-            this.btnSortByGiveChange.Name = "btnSortByGiveChange";
-            this.btnSortByGiveChange.UseVisualStyleBackColor = true;
-            this.btnSortByGiveChange.Click += new System.EventHandler(this.btnSortByGiveChange_Click);
-            // 
-            // btnSortByCashTopUp
-            // 
-            resources.ApplyResources(this.btnSortByCashTopUp, "btnSortByCashTopUp");
-            this.btnSortByCashTopUp.Name = "btnSortByCashTopUp";
-            this.btnSortByCashTopUp.UseVisualStyleBackColor = true;
-            this.btnSortByCashTopUp.Click += new System.EventHandler(this.btnSortByCashTopUp_Click);
-            // 
-            // lbTypeSortTransactoin
-            // 
-            resources.ApplyResources(this.lbTypeSortTransactoin, "lbTypeSortTransactoin");
-            this.lbTypeSortTransactoin.Name = "lbTypeSortTransactoin";
-            // 
-            // btnSortAll
-            // 
-            resources.ApplyResources(this.btnSortAll, "btnSortAll");
-            this.btnSortAll.Name = "btnSortAll";
-            this.btnSortAll.UseVisualStyleBackColor = true;
-            this.btnSortAll.Click += new System.EventHandler(this.btnSortAll_Click);
-            // 
             // UsersMenu
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.usersPanel);
             this.Controls.Add(this.adminPanel);
             this.Controls.Add(this.editProductPanel);
             this.Controls.Add(this.userPanel);
-            this.Controls.Add(this.usersPanel);
             this.Name = "UsersMenu";
             this.Load += new System.EventHandler(this.UserMenu_Load);
             this.adminPanel.ResumeLayout(false);

@@ -363,30 +363,6 @@
   <data name="&gt;&gt;btnSortByWithdrawCash.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="timeColumn.Text" xml:space="preserve">
-    <value>Час</value>
-  </data>
-  <data name="timeColumn.Width" type="System.Int32, mscorlib">
-    <value>90</value>
-  </data>
-  <data name="typeColumn.Text" xml:space="preserve">
-    <value>Тип транзакції</value>
-  </data>
-  <data name="typeColumn.Width" type="System.Int32, mscorlib">
-    <value>90</value>
-  </data>
-  <data name="userColumn.Text" xml:space="preserve">
-    <value>Користувач</value>
-  </data>
-  <data name="userColumn.Width" type="System.Int32, mscorlib">
-    <value>80</value>
-  </data>
-  <data name="amountColumn.Text" xml:space="preserve">
-    <value>Сума</value>
-  </data>
-  <data name="amountColumn.Width" type="System.Int32, mscorlib">
-    <value>50</value>
-  </data>
   <data name="lvTransactions.Location" type="System.Drawing.Point, System.Drawing">
     <value>963, 100</value>
   </data>
@@ -738,18 +714,6 @@
   <data name="&gt;&gt;btnBackAdminPanel.ZOrder" xml:space="preserve">
     <value>19</value>
   </data>
-  <data name="nameColumn.Text" xml:space="preserve">
-    <value>Назва</value>
-  </data>
-  <data name="modelColumn.Text" xml:space="preserve">
-    <value>Номер</value>
-  </data>
-  <data name="addressColumn.Text" xml:space="preserve">
-    <value>Адресса</value>
-  </data>
-  <data name="addressColumn.Width" type="System.Int32, mscorlib">
-    <value>100</value>
-  </data>
   <data name="listSelfCheckout.Location" type="System.Drawing.Point, System.Drawing">
     <value>306, 100</value>
   </data>
@@ -1084,6 +1048,90 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;adminPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="timeColumn.Text" xml:space="preserve">
+    <value>Час</value>
+  </data>
+  <data name="timeColumn.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="typeColumn.Text" xml:space="preserve">
+    <value>Тип транзакції</value>
+  </data>
+  <data name="typeColumn.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="userColumn.Text" xml:space="preserve">
+    <value>Користувач</value>
+  </data>
+  <data name="userColumn.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="amountColumn.Text" xml:space="preserve">
+    <value>Сума</value>
+  </data>
+  <data name="amountColumn.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="nameColumn.Text" xml:space="preserve">
+    <value>Назва</value>
+  </data>
+  <data name="modelColumn.Text" xml:space="preserve">
+    <value>Номер</value>
+  </data>
+  <data name="addressColumn.Text" xml:space="preserve">
+    <value>Адресса</value>
+  </data>
+  <data name="addressColumn.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="&gt;&gt;btnUser.Name" xml:space="preserve">
+    <value>btnUser</value>
+  </data>
+  <data name="&gt;&gt;btnUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnUser.Parent" xml:space="preserve">
+    <value>usersPanel</value>
+  </data>
+  <data name="&gt;&gt;btnUser.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnAdmin.Name" xml:space="preserve">
+    <value>btnAdmin</value>
+  </data>
+  <data name="&gt;&gt;btnAdmin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAdmin.Parent" xml:space="preserve">
+    <value>usersPanel</value>
+  </data>
+  <data name="&gt;&gt;btnAdmin.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="usersPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>606, 227</value>
+  </data>
+  <data name="usersPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="usersPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 120</value>
+  </data>
+  <data name="usersPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;usersPanel.Name" xml:space="preserve">
+    <value>usersPanel</value>
+  </data>
+  <data name="&gt;&gt;usersPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;usersPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;usersPanel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="btnUser.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -1146,29 +1194,125 @@
   <data name="&gt;&gt;btnAdmin.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="usersPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>606, 227</value>
+  <data name="&gt;&gt;lbErrorProducts.Name" xml:space="preserve">
+    <value>lbErrorProducts</value>
   </data>
-  <data name="usersPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+  <data name="&gt;&gt;lbErrorProducts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="usersPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 120</value>
+  <data name="&gt;&gt;lbErrorProducts.Parent" xml:space="preserve">
+    <value>editProductPanel</value>
   </data>
-  <data name="usersPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="&gt;&gt;lbErrorProducts.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;usersPanel.Name" xml:space="preserve">
-    <value>usersPanel</value>
+  <data name="&gt;&gt;btnBackProducts.Name" xml:space="preserve">
+    <value>btnBackProducts</value>
   </data>
-  <data name="&gt;&gt;usersPanel.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnBackProducts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnBackProducts.Parent" xml:space="preserve">
+    <value>editProductPanel</value>
+  </data>
+  <data name="&gt;&gt;btnBackProducts.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnCreateProduct.Name" xml:space="preserve">
+    <value>btnCreateProduct</value>
+  </data>
+  <data name="&gt;&gt;btnCreateProduct.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCreateProduct.Parent" xml:space="preserve">
+    <value>editProductPanel</value>
+  </data>
+  <data name="&gt;&gt;btnCreateProduct.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tbPriceProduct.Name" xml:space="preserve">
+    <value>tbPriceProduct</value>
+  </data>
+  <data name="&gt;&gt;tbPriceProduct.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbPriceProduct.Parent" xml:space="preserve">
+    <value>editProductPanel</value>
+  </data>
+  <data name="&gt;&gt;tbPriceProduct.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tbCodeProduct.Name" xml:space="preserve">
+    <value>tbCodeProduct</value>
+  </data>
+  <data name="&gt;&gt;tbCodeProduct.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbCodeProduct.Parent" xml:space="preserve">
+    <value>editProductPanel</value>
+  </data>
+  <data name="&gt;&gt;tbCodeProduct.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;tbNameProduct.Name" xml:space="preserve">
+    <value>tbNameProduct</value>
+  </data>
+  <data name="&gt;&gt;tbNameProduct.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbNameProduct.Parent" xml:space="preserve">
+    <value>editProductPanel</value>
+  </data>
+  <data name="&gt;&gt;tbNameProduct.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lbEditProduct.Name" xml:space="preserve">
+    <value>lbEditProduct</value>
+  </data>
+  <data name="&gt;&gt;lbEditProduct.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbEditProduct.Parent" xml:space="preserve">
+    <value>editProductPanel</value>
+  </data>
+  <data name="&gt;&gt;lbEditProduct.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;lvProducts.Name" xml:space="preserve">
+    <value>lvProducts</value>
+  </data>
+  <data name="&gt;&gt;lvProducts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lvProducts.Parent" xml:space="preserve">
+    <value>editProductPanel</value>
+  </data>
+  <data name="&gt;&gt;lvProducts.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="editProductPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 2</value>
+  </data>
+  <data name="editProductPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1410, 598</value>
+  </data>
+  <data name="editProductPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="editProductPanel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;editProductPanel.Name" xml:space="preserve">
+    <value>editProductPanel</value>
+  </data>
+  <data name="&gt;&gt;editProductPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;usersPanel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;editProductPanel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;usersPanel.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;editProductPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="lbErrorProducts.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 7.8pt, style=Bold</value>
@@ -1344,18 +1488,6 @@
   <data name="&gt;&gt;lbEditProduct.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="nameColumnProduct.Text" xml:space="preserve">
-    <value>Назва</value>
-  </data>
-  <data name="codeColumnProduct.Text" xml:space="preserve">
-    <value>Код</value>
-  </data>
-  <data name="priceColumnProduct.Text" xml:space="preserve">
-    <value>Ціна</value>
-  </data>
-  <data name="priceColumnProduct.Width" type="System.Int32, mscorlib">
-    <value>100</value>
-  </data>
   <data name="lvProducts.Location" type="System.Drawing.Point, System.Drawing">
     <value>446, 39</value>
   </data>
@@ -1377,29 +1509,329 @@
   <data name="&gt;&gt;lvProducts.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="editProductPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 2</value>
+  <data name="nameColumnProduct.Text" xml:space="preserve">
+    <value>Назва</value>
   </data>
-  <data name="editProductPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1410, 598</value>
+  <data name="codeColumnProduct.Text" xml:space="preserve">
+    <value>Код</value>
   </data>
-  <data name="editProductPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
+  <data name="priceColumnProduct.Text" xml:space="preserve">
+    <value>Ціна</value>
   </data>
-  <data name="editProductPanel.Visible" type="System.Boolean, mscorlib">
+  <data name="priceColumnProduct.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="&gt;&gt;lbErrorPay.Name" xml:space="preserve">
+    <value>lbErrorPay</value>
+  </data>
+  <data name="&gt;&gt;lbErrorPay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbErrorPay.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;lbErrorPay.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lbErrorProductsUser.Name" xml:space="preserve">
+    <value>lbErrorProductsUser</value>
+  </data>
+  <data name="&gt;&gt;lbErrorProductsUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbErrorProductsUser.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;lbErrorProductsUser.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lvUserProducts.Name" xml:space="preserve">
+    <value>lvUserProducts</value>
+  </data>
+  <data name="&gt;&gt;lvUserProducts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lvUserProducts.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;lvUserProducts.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lvListSelfCheckoutUser.Name" xml:space="preserve">
+    <value>lvListSelfCheckoutUser</value>
+  </data>
+  <data name="&gt;&gt;lvListSelfCheckoutUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lvListSelfCheckoutUser.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;lvListSelfCheckoutUser.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lbListSelfCheckoutText.Name" xml:space="preserve">
+    <value>lbListSelfCheckoutText</value>
+  </data>
+  <data name="&gt;&gt;lbListSelfCheckoutText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbListSelfCheckoutText.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;lbListSelfCheckoutText.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnPay.Name" xml:space="preserve">
+    <value>btnPay</value>
+  </data>
+  <data name="&gt;&gt;btnPay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnPay.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;btnPay.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;tbAmountUser.Name" xml:space="preserve">
+    <value>tbAmountUser</value>
+  </data>
+  <data name="&gt;&gt;tbAmountUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbAmountUser.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;tbAmountUser.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;lbAmountUserText.Name" xml:space="preserve">
+    <value>lbAmountUserText</value>
+  </data>
+  <data name="&gt;&gt;lbAmountUserText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbAmountUserText.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;lbAmountUserText.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;lbCartAmount.Name" xml:space="preserve">
+    <value>lbCartAmount</value>
+  </data>
+  <data name="&gt;&gt;lbCartAmount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbCartAmount.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;lbCartAmount.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;lbCartAmountText.Name" xml:space="preserve">
+    <value>lbCartAmountText</value>
+  </data>
+  <data name="&gt;&gt;lbCartAmountText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbCartAmountText.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;lbCartAmountText.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;cbLoyaltyCard.Name" xml:space="preserve">
+    <value>cbLoyaltyCard</value>
+  </data>
+  <data name="&gt;&gt;cbLoyaltyCard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbLoyaltyCard.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;cbLoyaltyCard.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;cbDeliveryCart.Name" xml:space="preserve">
+    <value>cbDeliveryCart</value>
+  </data>
+  <data name="&gt;&gt;cbDeliveryCart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbDeliveryCart.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;cbDeliveryCart.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;lbPayType.Name" xml:space="preserve">
+    <value>lbPayType</value>
+  </data>
+  <data name="&gt;&gt;lbPayType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbPayType.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;lbPayType.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;lbPayText.Name" xml:space="preserve">
+    <value>lbPayText</value>
+  </data>
+  <data name="&gt;&gt;lbPayText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbPayText.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;lbPayText.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;cbPayType.Name" xml:space="preserve">
+    <value>cbPayType</value>
+  </data>
+  <data name="&gt;&gt;cbPayType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbPayType.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;cbPayType.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;lbCartText.Name" xml:space="preserve">
+    <value>lbCartText</value>
+  </data>
+  <data name="&gt;&gt;lbCartText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbCartText.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;lbCartText.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;lvCart.Name" xml:space="preserve">
+    <value>lvCart</value>
+  </data>
+  <data name="&gt;&gt;lvCart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lvCart.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;lvCart.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;lbCountProductsText.Name" xml:space="preserve">
+    <value>lbCountProductsText</value>
+  </data>
+  <data name="&gt;&gt;lbCountProductsText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbCountProductsText.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;lbCountProductsText.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;tbCountProducts.Name" xml:space="preserve">
+    <value>tbCountProducts</value>
+  </data>
+  <data name="&gt;&gt;tbCountProducts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbCountProducts.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;tbCountProducts.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;btnAddProductToCart.Name" xml:space="preserve">
+    <value>btnAddProductToCart</value>
+  </data>
+  <data name="&gt;&gt;btnAddProductToCart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAddProductToCart.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;btnAddProductToCart.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;lbProductsListUser.Name" xml:space="preserve">
+    <value>lbProductsListUser</value>
+  </data>
+  <data name="&gt;&gt;lbProductsListUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbProductsListUser.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;lbProductsListUser.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;lbUserMoney.Name" xml:space="preserve">
+    <value>lbUserMoney</value>
+  </data>
+  <data name="&gt;&gt;lbUserMoney.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbUserMoney.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;lbUserMoney.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;lbUserMoneyText.Name" xml:space="preserve">
+    <value>lbUserMoneyText</value>
+  </data>
+  <data name="&gt;&gt;lbUserMoneyText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbUserMoneyText.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;lbUserMoneyText.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;btnBackUser.Name" xml:space="preserve">
+    <value>btnBackUser</value>
+  </data>
+  <data name="&gt;&gt;btnBackUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnBackUser.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;btnBackUser.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="userPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, -1</value>
+  </data>
+  <data name="userPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1412, 598</value>
+  </data>
+  <data name="userPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="userPanel.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;editProductPanel.Name" xml:space="preserve">
-    <value>editProductPanel</value>
+  <data name="&gt;&gt;userPanel.Name" xml:space="preserve">
+    <value>userPanel</value>
   </data>
-  <data name="&gt;&gt;editProductPanel.Type" xml:space="preserve">
+  <data name="&gt;&gt;userPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;editProductPanel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;userPanel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;editProductPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;userPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="lbErrorPay.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 7.8pt, style=Bold</value>
@@ -1455,18 +1887,6 @@
   <data name="&gt;&gt;lbErrorProductsUser.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="nameProductUserColumn.Text" xml:space="preserve">
-    <value>Назва</value>
-  </data>
-  <data name="codeProductUserColumn.Text" xml:space="preserve">
-    <value>Код</value>
-  </data>
-  <data name="priceProductUserColumn.Text" xml:space="preserve">
-    <value>Ціна</value>
-  </data>
-  <data name="priceProductUserColumn.Width" type="System.Int32, mscorlib">
-    <value>100</value>
-  </data>
   <data name="lvUserProducts.Location" type="System.Drawing.Point, System.Drawing">
     <value>404, 82</value>
   </data>
@@ -1488,16 +1908,16 @@
   <data name="&gt;&gt;lvUserProducts.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="nameSelfCheckoutColumn.Text" xml:space="preserve">
+  <data name="nameProductUserColumn.Text" xml:space="preserve">
     <value>Назва</value>
   </data>
-  <data name="codeSelfCheckoutColumn.Text" xml:space="preserve">
-    <value>Номер</value>
+  <data name="codeProductUserColumn.Text" xml:space="preserve">
+    <value>Код</value>
   </data>
-  <data name="addressSelfCheckoutColumn.Text" xml:space="preserve">
-    <value>Адресса</value>
+  <data name="priceProductUserColumn.Text" xml:space="preserve">
+    <value>Ціна</value>
   </data>
-  <data name="addressSelfCheckoutColumn.Width" type="System.Int32, mscorlib">
+  <data name="priceProductUserColumn.Width" type="System.Int32, mscorlib">
     <value>100</value>
   </data>
   <data name="lvListSelfCheckoutUser.Location" type="System.Drawing.Point, System.Drawing">
@@ -1523,6 +1943,18 @@
   </data>
   <data name="&gt;&gt;lvListSelfCheckoutUser.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="nameSelfCheckoutColumn.Text" xml:space="preserve">
+    <value>Назва</value>
+  </data>
+  <data name="codeSelfCheckoutColumn.Text" xml:space="preserve">
+    <value>Номер</value>
+  </data>
+  <data name="addressSelfCheckoutColumn.Text" xml:space="preserve">
+    <value>Адресса</value>
+  </data>
+  <data name="addressSelfCheckoutColumn.Width" type="System.Int32, mscorlib">
+    <value>100</value>
   </data>
   <data name="lbListSelfCheckoutText.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1884,24 +2316,6 @@
   <data name="&gt;&gt;lbCartText.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
-  <data name="columnHeader4.Text" xml:space="preserve">
-    <value>Назва</value>
-  </data>
-  <data name="columnHeader5.Text" xml:space="preserve">
-    <value>Код</value>
-  </data>
-  <data name="columnHeader6.Text" xml:space="preserve">
-    <value>Ціна</value>
-  </data>
-  <data name="columnHeader6.Width" type="System.Int32, mscorlib">
-    <value>100</value>
-  </data>
-  <data name="columnHeader7.Text" xml:space="preserve">
-    <value>Кількість</value>
-  </data>
-  <data name="columnHeader7.Width" type="System.Int32, mscorlib">
-    <value>82</value>
-  </data>
   <data name="lvCart.Location" type="System.Drawing.Point, System.Drawing">
     <value>760, 83</value>
   </data>
@@ -1922,6 +2336,24 @@
   </data>
   <data name="&gt;&gt;lvCart.ZOrder" xml:space="preserve">
     <value>16</value>
+  </data>
+  <data name="columnHeader4.Text" xml:space="preserve">
+    <value>Назва</value>
+  </data>
+  <data name="columnHeader5.Text" xml:space="preserve">
+    <value>Код</value>
+  </data>
+  <data name="columnHeader6.Text" xml:space="preserve">
+    <value>Ціна</value>
+  </data>
+  <data name="columnHeader6.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="columnHeader7.Text" xml:space="preserve">
+    <value>Кількість</value>
+  </data>
+  <data name="columnHeader7.Width" type="System.Int32, mscorlib">
+    <value>82</value>
   </data>
   <data name="lbCountProductsText.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2129,30 +2561,6 @@
   </data>
   <data name="&gt;&gt;btnBackUser.ZOrder" xml:space="preserve">
     <value>23</value>
-  </data>
-  <data name="userPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, -1</value>
-  </data>
-  <data name="userPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1412, 598</value>
-  </data>
-  <data name="userPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="userPanel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;userPanel.Name" xml:space="preserve">
-    <value>userPanel</value>
-  </data>
-  <data name="&gt;&gt;userPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;userPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;userPanel.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

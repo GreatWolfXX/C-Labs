@@ -8,6 +8,11 @@ namespace WindowsFormsApp1
 {
     internal class Transaction
     {
+        public DateTime TransactionDateTime { get; set; }
+        public Users User { get; set; }
+        public TransactionType TransactionType { get; set; }
+        public decimal Amount { get; set; }
+
         public Transaction(TransactionType transactionType, Users user, decimal amount) 
         {
             TransactionDateTime = DateTime.Now;
@@ -15,11 +20,7 @@ namespace WindowsFormsApp1
             User = user;
             Amount = amount;
         }
-
-        public DateTime TransactionDateTime { get; set; }
-        public Users User { get; set; }
-        public TransactionType TransactionType { get; set; }    
-        public decimal Amount { get; set; }
+        
         public static void CommitTransaction(SelfCheckoutClass selfCheckout, Transaction transaction)
         {
             selfCheckout.Transactions

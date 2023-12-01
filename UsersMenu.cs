@@ -69,6 +69,7 @@ namespace WindowsFormsApp1
             ShowTransactions();
         }
 
+
         private void btnUser_Click(object sender, EventArgs e)
         {
             usersPanel.Visible = false;
@@ -79,19 +80,18 @@ namespace WindowsFormsApp1
             {
                 AddItemToSelfCheckoutUserListView(checkout.Name, checkout.Model, checkout.LocationAddress);
             }
-            decimal allPrice = 0;
-            foreach (var cartItem in listCartItems)
-            {
-                var price = cartItem.Product.Price * cartItem.Count;
-                allPrice += price;
-                AddItemToCartListView(cartItem.Product.Name, cartItem.Product.Code, allPrice.ToString(), cartItem.Count);
-            }
+            ShowCartItems();
         }
 
         private void btnBackAdminPanel_Click(object sender, EventArgs e)
         {
             adminPanel.Visible = false;
             usersPanel.Visible = true;
+
+            lbCashBalance.Text = "";
+            lbErrorCash.Text = "";
+            tbCash.Text = "";
+            lvTransactions.Items.Clear();
         }
 
         private void btnBackUser_Click(object sender, EventArgs e)
@@ -100,20 +100,45 @@ namespace WindowsFormsApp1
             usersPanel.Visible = true;
         }
 
+        private void btnBackProducts_Click(object sender, EventArgs e)
+        {
+            editProductPanel.Visible = false;
+            adminPanel.Visible = true;
+        }
+
+        private void btnChangeSelfCheckout_Click(object sender, EventArgs e)
+        {
+            lvProducts.Items.Clear();
+
+            if (listSelfCheckout.SelectedItems.Count > 0)
+            {
+                var selfCheckout = listSelfCheckouts[tempListSelfCheckoutPosition];
+                foreach (var product in selfCheckout.GetListProducts())
+                {
+                    AddItemToProductsListView(product.Name, product.Code, product.Price + "");
+                }
+
+                editProductPanel.Visible = true;
+                adminPanel.Visible = false;
+            }
+        }
+
         private void btnCreateSelfCheckout_Click(object sender, EventArgs e)
         {
             lbError.Text = "";
 
-            if (tbName.Text != "" && tbModel.Text != "" && tbAddress.Text != "")
+            if (!string.IsNullOrEmpty(tbName.Text) &&
+                !string.IsNullOrEmpty(tbModel.Text) &&
+                !string.IsNullOrEmpty(tbAddress.Text))
             {
                 var checkout = new SelfCheckoutClass(
-                tbName.Text,
-                tbModel.Text,
-                tbAddress.Text,
-                cbCardPayment.Checked,
-                cbOnlinOrder.Checked,
-                cbOnlineOrderDelivery.Checked,
-                cbOnlineOrderDeliveryCash.Checked
+                    tbName.Text,
+                    tbModel.Text,
+                    tbAddress.Text,
+                    cbCardPayment.Checked,
+                    cbOnlinOrder.Checked,
+                    cbOnlineOrderDelivery.Checked,
+                    cbOnlineOrderDeliveryCash.Checked
                 );
 
                 listSelfCheckouts.Add(checkout);
@@ -131,53 +156,29 @@ namespace WindowsFormsApp1
             {
                 lbError.Text = "Поля не повинні бути пустими!";
             }
-            
-        }
-
-        private void btnChangeSelfCheckout_Click(object sender, EventArgs e)
-        {
-            lvProducts.Items.Clear();
-            
-            if (listSelfCheckout.SelectedItems.Count > 0)
-            {
-                var selfCheckout = listSelfCheckouts[tempListSelfCheckoutPosition];
-                foreach (var product in selfCheckout.GetListProducts())
-                {
-                    AddItemToProductsListView(product.Name, product.Code, product.Price + "");
-                }
-
-                editProductPanel.Visible = true;
-                adminPanel.Visible = false;
-            }
-        }
-
-        private void btnBackProducts_Click(object sender, EventArgs e)
-        {
-            editProductPanel.Visible = false;
-            adminPanel.Visible = true;
         }
 
         private void btnCreateProduct_Click(object sender, EventArgs e)
         {
             lbErrorProducts.Text = "";
 
-            if (tbNameProduct.Text != "" && tbCodeProduct.Text != "" && tbPriceProduct.Text != "")
+            if (!string.IsNullOrEmpty(tbNameProduct.Text) &&
+                !string.IsNullOrEmpty(tbCodeProduct.Text) &&
+                !string.IsNullOrEmpty(tbPriceProduct.Text))
             {
-                var product = new Product(
-                tbNameProduct.Text,
-                tbCodeProduct.Text,
-                decimal.Parse(tbPriceProduct.Text)
-                );
+                var product = new Product(tbNameProduct.Text, tbCodeProduct.Text, decimal.Parse(tbPriceProduct.Text));
 
                 try
                 {
-                    listSelfCheckouts[tempListSelfCheckoutPosition].AddProduct(product);
-                    AddItemToProductsListView(product.Name, product.Code, product.Price + "");
+                    var selfCheckout = listSelfCheckouts[tempListSelfCheckoutPosition];
+                    selfCheckout.AddProduct(product);
+                    AddItemToProductsListView(product.Name, product.Code, product.Price.ToString());
 
                     tbNameProduct.Text = "";
                     tbCodeProduct.Text = "";
                     tbPriceProduct.Text = "";
-                } catch (InvalidOperationException ex)
+                }
+                catch (InvalidOperationException ex)
                 {
                     lbErrorProducts.Text = "Код товару повинен бути унікальним";
                 }
@@ -191,13 +192,15 @@ namespace WindowsFormsApp1
         private void btnWithdraw_Click(object sender, EventArgs e)
         {
             lbErrorCash.Text = "";
+
             if (listSelfCheckout.SelectedItems.Count > 0)
             {
+                var selfCheckout = listSelfCheckouts[tempListSelfCheckoutPosition];
+
                 try
                 {
-                    if (tbCash.Text != "")
+                    if (!string.IsNullOrEmpty(tbCash.Text))
                     {
-                        var selfCheckout = listSelfCheckouts[tempListSelfCheckoutPosition];
                         selfCheckout.WithdrawCash(decimal.Parse(tbCash.Text));
                         lbCashBalance.Text = selfCheckout.CashBalance.ToString();
                         ShowTransactions();
@@ -206,7 +209,8 @@ namespace WindowsFormsApp1
                     {
                         lbErrorCash.Text = "Поля не повинні бути пустими!";
                     }
-                } catch (InvalidOperationException ex)
+                }
+                catch (InvalidOperationException ex)
                 {
                     lbErrorCash.Text = "Сумма зняття готівки не повинна перевищювати доступну!";
                 }
@@ -220,34 +224,114 @@ namespace WindowsFormsApp1
         private void btnUploadCash_Click(object sender, EventArgs e)
         {
             lbErrorCash.Text = "";
+
             if (listSelfCheckout.SelectedItems.Count > 0)
             {
-                if(tbCash.Text != "")
+                var selfCheckout = listSelfCheckouts[tempListSelfCheckoutPosition];
+
+                if (!string.IsNullOrEmpty(tbCash.Text))
                 {
-                    var selfCheckout = listSelfCheckouts[tempListSelfCheckoutPosition];
                     selfCheckout.TopUpCash(decimal.Parse(tbCash.Text));
                     lbCashBalance.Text = selfCheckout.CashBalance.ToString();
                     ShowTransactions();
-                } else
+                }
+                else
                 {
                     lbErrorCash.Text = "Поля не повинні бути пустими!";
                 }
-               
-            } else
+            }
+            else
             {
                 lbErrorCash.Text = "Потрібно вибрати касу зі списку!";
             }
         }
 
-
-        private void ShowTransactions()
+        private void btnAddProductToCart_Click(object sender, EventArgs e)
         {
-            lvTransactions.Items.Clear();
-            var selfCheckout = listSelfCheckouts[tempListSelfCheckoutPosition];
-            foreach (Transaction transaction in selfCheckout.Transactions)
+            lbErrorProductsUser.Text = "";
+
+            if (!string.IsNullOrEmpty(tbCountProducts.Text) && tbCountProducts.Text != "0")
             {
-                AddItemToTransactionListView(transaction.TransactionDateTime.Date + "", transaction.TransactionType + "", transaction.User + "", transaction.Amount + "");
+                var selfCheckout = listSelfCheckouts[tempListSelfCheckoutUserPosition];
+                var product = selfCheckout.GetListProducts()[tempListProductUserPosition];
+                var cartItem = new CartItem(product, int.Parse(tbCountProducts.Text));
+                listCartItems.Add(cartItem);
+
+                lvCart.Items.Clear();
+                ShowCartItems();
+                setTypePayment(cbPayType.SelectedIndex);
             }
+            else
+            {
+                lbErrorProductsUser.Text = "Поле не повинно бути пустим або дорівнювати 0!";
+            }
+        }
+
+        private void btnPay_Click(object sender, EventArgs e)
+        {
+            lbErrorPay.Text = "";
+            var selfCheckout = listSelfCheckouts[tempListSelfCheckoutUserPosition];
+            decimal money = tbAmountUser.Visible ? decimal.Parse(tbAmountUser.Text) : payment.TotalPrice;
+
+            if (money >= payment.TotalPrice)
+            {
+                if (payment.AmountPaid == 0)
+                {
+                    payment.AmountPaid = money;
+                }
+
+                payment = selfCheckout.CreateTransaction(payment, paymentType);
+                userMoney -= money;
+                userMoney += payment.Change;
+
+                lbUserMoney.Text = userMoney.ToString();
+                tbAmountUser.Text = "";
+                cbLoyaltyCard.Checked = false;
+                cbDeliveryCart.Checked = false;
+                listCartItems.Clear();
+                lbCartAmount.Text = "0";
+                lvCart.Items.Clear();
+                tbCountProducts.Text = "";
+            }
+            else
+            {
+                lbErrorPay.Text = "Не вистачає грошей!";
+            }
+        }
+
+        private void btnSortByWithdrawCash_Click(object sender, EventArgs e)
+        {
+            ShowTransactionByType(TransactionType.WithdrawCash);
+        }
+
+        private void btnSortByBuyWithCard_Click(object sender, EventArgs e)
+        {
+            ShowTransactionByType(TransactionType.BuyWithCard);
+        }
+
+        private void btnSortByBuyWithCash_Click(object sender, EventArgs e)
+        {
+            ShowTransactionByType(TransactionType.BuyWithCash);
+        }
+
+        private void btnSortByCashTopUp_Click(object sender, EventArgs e)
+        {
+            ShowTransactionByType(TransactionType.CashTopUp);
+        }
+
+        private void btnSortByGiveChange_Click(object sender, EventArgs e)
+        {
+            ShowTransactionByType(TransactionType.GiveChange);
+        }
+
+        private void btnSortByAddProduct_Click(object sender, EventArgs e)
+        {
+            ShowTransactionByType(TransactionType.AddProduct);
+        }
+
+        private void btnSortAll_Click(object sender, EventArgs e)
+        {
+            ShowTransactions();
         }
 
         private void listSelfCheckout_ItemSelectionChanged(object sender, ListViewItemSelectionChangedEventArgs e)
@@ -288,6 +372,30 @@ namespace WindowsFormsApp1
             {
                 tempListProductUserPosition = lvUserProducts.Items.IndexOf(lvUserProducts.SelectedItems[0]);
             }
+        }
+
+        private void cbPayType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            setTypePayment(cbPayType.SelectedIndex);
+        }
+
+        private void cbDeliveryCart_CheckedChanged(object sender, EventArgs e)
+        {
+            cbPayType.Items.Clear();
+            if (cbDeliveryCart.Checked)
+            {
+                setDefaultTypePayment();
+                setDeliveryTypePayment();
+            }
+            else
+            {
+                setDefaultTypePayment();
+            }
+        }
+
+        private void cbLoyaltyCard_CheckedChanged(object sender, EventArgs e)
+        {
+            setTypePayment(cbPayType.SelectedIndex);
         }
 
         private void AddItemToSelfCheckoutListView(string name, string model, string locationAddress)
@@ -341,43 +449,6 @@ namespace WindowsFormsApp1
             lvCart.Items.Add(item);
         }
 
-        private void btnAddProductToCart_Click(object sender, EventArgs e)
-        {
-            lbErrorProductsUser.Text = "";
-
-            if (tbCountProducts.Text != "" && tbCountProducts.Text != 0.ToString())
-            {
-                var selfCheckout = listSelfCheckouts[tempListSelfCheckoutUserPosition];
-                var product = selfCheckout.GetListProducts()[tempListProductUserPosition];
-                var cartItem = new CartItem(product, int.Parse(tbCountProducts.Text));
-                listCartItems.Add(cartItem);
-                lvCart.Items.Clear();
-                decimal allPrice = 0;
-                foreach (CartItem item in listCartItems)
-                {
-                    var price = item.Product.Price * item.Count;
-                    allPrice += price;
-                    AddItemToCartListView(item.Product.Name, item.Product.Code, price.ToString(), item.Count);
-                }
-                setTypePayment(cbPayType.SelectedIndex);
-            } else {
-                lbErrorProductsUser.Text = "Поле не повинно бути пустим або дорівнювати 0!";
-            }
-        }
-
-        private void cbDeliveryCart_CheckedChanged(object sender, EventArgs e)
-        {
-            cbPayType.Items.Clear();
-            if (cbDeliveryCart.Checked)
-            {
-                setDefaultTypePayment();
-                setDeliveryTypePayment();
-            } else
-            {
-                setDefaultTypePayment();
-            }
-        }
-
         private void setDefaultTypePayment()
         {
             var selfCheckout = listSelfCheckouts[tempListSelfCheckoutUserPosition];
@@ -411,95 +482,53 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void cbPayType_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            setTypePayment(cbPayType.SelectedIndex);
-        }
-        
-
         private void setTypePayment(int selectedPaymentType)
         {
             var selfCheckout = listSelfCheckouts[tempListSelfCheckoutUserPosition];
             cbLoyaltyCard.Visible = true;
             tbAmountUser.Visible = true;
+            lbAmountUserText.Visible = true;
+
+            bool isWholesale30 = isWholesale(30);
+            bool isWholesale50 = isWholesale(50);
+
             switch (selectedPaymentType)
             {
                 case 0:
-                    if(!isWholesale(30))
-                    {
-                        paymentType = PaymentType.CashRetail;
-                        payment = selfCheckout.ProcessReceipt(getProudctsFromCart(), paymentType, cbLoyaltyCard.Checked, cbDeliveryCart.Checked);
-                    } else
-                    {
-                        paymentType = PaymentType.CashWholesale;
-                        payment = selfCheckout.ProcessReceipt(getProudctsFromCart(), paymentType, cbLoyaltyCard.Checked, cbDeliveryCart.Checked);
-                    }
-
-                    lbCartAmount.Text = payment.TotalPrice.ToString();;
+                    paymentType = isWholesale30 ? PaymentType.CashWholesale : PaymentType.CashRetail;
                     break;
                 case 1:
-                    if (!isWholesale(30))
-                    {
-                        paymentType = PaymentType.CardRetail;
-                        payment = selfCheckout.ProcessReceipt(getProudctsFromCart(), paymentType, cbLoyaltyCard.Checked, cbDeliveryCart.Checked);
-                    }
-                    else
-                    {
-                        paymentType = PaymentType.CardWholesale;
-                        payment = selfCheckout.ProcessReceipt(getProudctsFromCart(), paymentType, cbLoyaltyCard.Checked, cbDeliveryCart.Checked);
-                    }
-
-                    tbAmountUser.Visible = false;
-                    lbCartAmount.Text = payment.TotalPrice.ToString();
-                    break;
                 case 2:
-                    if (!isWholesale(30))
-                    {
-                        paymentType = PaymentType.CardRetail;
-                        payment = selfCheckout.ProcessReceipt(getProudctsFromCart(), paymentType, cbLoyaltyCard.Checked, cbDeliveryCart.Checked);
-                    }
-                    else
-                    {
-                        paymentType = PaymentType.CardWholesale;
-                        payment = selfCheckout.ProcessReceipt(getProudctsFromCart(), paymentType, cbLoyaltyCard.Checked, cbDeliveryCart.Checked);
-                    }
+                    paymentType = isWholesale30 ? PaymentType.CardWholesale : PaymentType.CardRetail;
                     tbAmountUser.Visible = false;
-                    lbCartAmount.Text = payment.TotalPrice.ToString();
+                    lbAmountUserText.Visible = false;
                     break;
                 case 3:
                     cbLoyaltyCard.Visible = false;
-                    if (!isWholesale(50))
-                    {
-                        paymentType = PaymentType.CashDeliveryRetail;
-                        payment = selfCheckout.ProcessReceipt(getProudctsFromCart(), paymentType, cbLoyaltyCard.Checked, cbDeliveryCart.Checked);
-                    }
-                    else
-                    {
-                        paymentType = PaymentType.CashDeliveryWholesale;
-                        payment = selfCheckout.ProcessReceipt(getProudctsFromCart(), paymentType, cbLoyaltyCard.Checked, cbDeliveryCart.Checked);
-                    }
-
-                    lbCartAmount.Text = payment.TotalPrice.ToString();
+                    paymentType = isWholesale50 ? PaymentType.CashDeliveryWholesale : PaymentType.CashDeliveryRetail;
                     break;
                 default:
+                    paymentType = isWholesale30 ? PaymentType.CashWholesale : PaymentType.CashRetail;
                     break;
             }
+
+            payment = selfCheckout.ProcessReceipt(getProudctsFromCart(), paymentType, cbLoyaltyCard.Checked, cbDeliveryCart.Checked);
+            lbCartAmount.Text = payment.TotalPrice.ToString();
         }
 
         private bool isWholesale(int countForWholesale)
         {
-            bool isWholesale = false;
-            foreach(var item in listCartItems)
+            bool isWholesale = true;
+
+            foreach (var item in listCartItems)
             {
-                if(item.Count >= countForWholesale)
-                {
-                    isWholesale = true;
-                } else
+                if (item.Count < countForWholesale)
                 {
                     isWholesale = false;
                     break;
                 }
             }
+
             return isWholesale;
         }
 
@@ -516,46 +545,14 @@ namespace WindowsFormsApp1
             return list;
         }
 
-        private void cbLoyaltyCard_CheckedChanged(object sender, EventArgs e)
+        private void ShowTransactions()
         {
-            setTypePayment(cbPayType.SelectedIndex);
-        }
-
-        private void btnPay_Click(object sender, EventArgs e)
-        {
-            lbErrorPay.Text = "";
-            var selfCheckout = listSelfCheckouts[tempListSelfCheckoutUserPosition];
-            decimal money = 0;
-            if (tbAmountUser.Visible)
+            lvTransactions.Items.Clear();
+            var selfCheckout = listSelfCheckouts[tempListSelfCheckoutPosition];
+            foreach (Transaction transaction in selfCheckout.Transactions)
             {
-                money = decimal.Parse(tbAmountUser.Text);
+                AddItemToTransactionListView(transaction.TransactionDateTime.Date + "", transaction.TransactionType + "", transaction.User + "", transaction.Amount + "");
             }
-            else
-            {
-                money = payment.TotalPrice;
-            }
-
-            if (money >= payment.TotalPrice)
-            {
-                if(payment.AmountPaid == 0) { payment.AmountPaid = money; }
-                payment = selfCheckout.CreateTransaction(payment, paymentType);
-                userMoney -= money;
-                userMoney += payment.Change;
-                lbUserMoney.Text = userMoney.ToString();
-                tbAmountUser.Text = "";
-                cbLoyaltyCard.Checked = false;
-                cbDeliveryCart.Checked = false;
-                listCartItems.Clear();
-                lbCartAmount.Text = "0";
-                lvCart.Items.Clear();
-                lvUserProducts.Items.Clear();
-                tbCountProducts.Text = "";
-
-            } else
-            {
-                lbErrorPay.Text = "Не вистачає грошей!";
-            }
-           
         }
 
         private void ShowTransactionByType(TransactionType transactionType)
@@ -568,39 +565,15 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void btnSortByWithdrawCash_Click(object sender, EventArgs e)
+        private void ShowCartItems()
         {
-            ShowTransactionByType(TransactionType.WithdrawCash);
-        }
-
-        private void btnSortByBuyWithCard_Click(object sender, EventArgs e)
-        {
-            ShowTransactionByType(TransactionType.BuyWithCard);
-        }
-
-        private void btnSortByBuyWithCash_Click(object sender, EventArgs e)
-        {
-            ShowTransactionByType(TransactionType.BuyWithCash);
-        }
-
-        private void btnSortByCashTopUp_Click(object sender, EventArgs e)
-        {
-            ShowTransactionByType(TransactionType.CashTopUp);
-        }
-
-        private void btnSortByGiveChange_Click(object sender, EventArgs e)
-        {
-            ShowTransactionByType(TransactionType.GiveChange);
-        }
-
-        private void btnSortByAddProduct_Click(object sender, EventArgs e)
-        {
-            ShowTransactionByType(TransactionType.AddProduct);
-        }
-
-        private void btnSortAll_Click(object sender, EventArgs e)
-        {
-            ShowTransactions();
+            decimal allPrice = 0;
+            foreach (var cartItem in listCartItems)
+            {
+                var price = cartItem.Product.Price * cartItem.Count;
+                allPrice += price;
+                AddItemToCartListView(cartItem.Product.Name, cartItem.Product.Code, allPrice.ToString(), cartItem.Count);
+            }
         }
     }
 }

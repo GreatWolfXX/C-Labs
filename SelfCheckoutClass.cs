@@ -6,6 +6,19 @@ namespace WindowsFormsApp1
 {
     internal class SelfCheckoutClass
     {
+
+        public string Name { get; set; }
+        public string Model { get; set; }
+        public string LocationAddress { get; set; }
+        public decimal CashBalance { get; set; }
+        public decimal CardBalance { get; set; }
+        public bool CardPaymentAvailable { get; set; }
+        public bool OnlineOrderAvailable { get; set; }
+        public bool OnlineOrderDeliveryAvailable { get; set; }
+        public bool OnlineOrderDeliveryCashAvailable { get; set; }
+        private List<Product> Products { get; set; }
+        public List<Transaction> Transactions { get; set; }
+
         public SelfCheckoutClass(
             string name, 
             string model,
@@ -26,18 +39,6 @@ namespace WindowsFormsApp1
             Products = new List<Product>();
             Transactions = new List<Transaction>();
         }
-
-        public string Name { get; set; }
-        public string Model { get; set; }
-        public string LocationAddress { get; set; }
-        public decimal CashBalance { get; set; }
-        public decimal CardBalance { get; set; }
-        public bool CardPaymentAvailable { get; set; }
-        public bool OnlineOrderAvailable { get; set; }
-        public bool OnlineOrderDeliveryAvailable { get; set; }
-        public bool OnlineOrderDeliveryCashAvailable { get; set; }
-        private List<Product> Products { get; set; }
-        public List<Transaction> Transactions { get; set; }
 
         public void AddProduct(Product productToAdd)
         {
